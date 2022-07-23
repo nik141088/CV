@@ -1,2 +1,2 @@
 # CV
-markdown to generate CV
+markdown to generate my CV
