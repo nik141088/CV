@@ -1,0 +1,399 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 8 February 2019
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,]{moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{A52A2A}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,footskip=60pt]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+\usepackage{ragged2e}
+\usepackage{comment}
+
+% personal data
+\name{Nikhil}{Vidhani}
+\title{Ph.D., Finance and Accounting, IIM Bangalore}
+
+\phone[mobile]{+91-797-555-7296} % Phone number
+\email{\donothing{\href{mailto:nikhil.vidhani16@iimb.ac.in}{\nolinkurl{nikhil.vidhani16@iimb.ac.in}},
+\href{mailto:nikhil141088@gmail.com}{\nolinkurl{nikhil141088@gmail.com}}}}
+\homepage{sites.google.com/view/nikhilvidhani} % Personal website
+\social[linkedin]{nikhil-vidhani-43a74424}
+
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+\photo[70pt][0.4pt]{nikhil-vidhani.jpg}
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+
+\newenvironment{smallblockquote}{%
+  \par%
+  \medskip
+  \leftskip=2em\rightskip=0em%
+  \noindent\ignorespaces}{%
+  \par\medskip}
+
+\newenvironment{blockquote}{%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces}{%
+  \par\medskip}
+
+\hypertarget{research-interests}{%
+\section{Research Interests}\label{research-interests}}
+
+\begingroup
+%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces
+
+Empirical Asset Pricing, Return Anomalies, Investor Disagreement, Textual analysis.
+
+%
+  \par\medskip
+\endgroup
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\nopagebreak
+    \cventry{2016--2022 (Defended)}{Doctor of Philosophy}{Finance and Accounting}{Indian Institute of Management, Bangalore}{}{\begin{itemize}%
+\item CGPA: 3.64 / 4.00%
+\end{itemize}}
+    \cventry{2010--2012}{Master of Engineering}{Telecommunications Engineering}{Indian Institute of Science, Bangalore}{}{\begin{itemize}%
+\item CGPA: 6.4 / 8.0; Project Grade: A%
+\end{itemize}}
+    \cventry{2006--2010}{Bachelor of Technology}{Electronics and Communication Engg.}{Bundelkhand Institute of Engg. and Tech., Jhansi (U.P.)}{}{\begin{itemize}%
+\item 73.6 \%%
+\end{itemize}}
+    \cventry{2006}{Intermediate (12th Standard)}{Science}{C.B.S.E.}{}{\begin{itemize}%
+\item 88.2 \%%
+\end{itemize}}
+    \cventry{2004}{High School (10th Standard)}{}{C.B.S.E.}{}{\begin{itemize}%
+\item 81.6 \%%
+\end{itemize}}
+
+\hypertarget{industry-and-teaching-experience}{%
+\section{Industry and Teaching
+Experience}\label{industry-and-teaching-experience}}
+
+\nopagebreak
+    \cventry{Jan 2022 (ongoing)}{Applied R for Econometrics}{Primary Instructor}{7 lectures}{}{\empty}
+    \cventry{2021}{Introduction to Latex}{Primary Instructor (Rating: 4.7/5)}{Course design; 2 online lectures; Hands-on lab}{}{\empty}
+    \cventry{2021}{R Programming and Data Analysis course for IIMB Predoctoral students}{Primary Instructor (Rating: 4.6/5)}{Course design; 10 online lectures; Assignments, quizzes and lab}{}{\empty}
+    \cventry{2018--2019}{R Langauge course for incoming IIMB PhD students}{Primary Instructor}{Course design; 6 lectures; Assignments; Hands-on lab}{}{\empty}
+    \cventry{2012--2016}{Cisco Systems, Bangalore}{Software Engineer}{4G LTE networks; Wireless Controller}{}{\empty}
+
+\hypertarget{awards-and-honors}{%
+\section{Awards and Honors}\label{awards-and-honors}}
+
+\nopagebreak
+    \cventry{2020}{Mirae Asset Scholarship (PhD Year 5)}{Indian Institute of Management}{}{}{\empty}
+    \cventry{2018}{Director's Merit List (PhD Year 2)}{Indian Institute of Management}{}{}{\empty}
+    \cventry{2017}{Director's Merit List (PhD Year 1)}{Indian Institute of Management}{}{}{\empty}
+    \cventry{2016}{96.5 percentile}{Common Aptitute Test (CAT)}{}{}{\empty}
+    \cventry{2010}{Ministry of HRD Scholarship (2 years)}{Indian Institute of Science}{}{}{\empty}
+    \cventry{2010}{All India Rank 20 out of 105,000 participants}{Graduate Aptitude Test in Engineering (GATE)}{}{}{\empty}
+    \cventry{2007}{Merit Scholarship (top 10 students across institute)}{Bundelkhand Institute of Engg. and Tech.}{}{}{\empty}
+    \cventry{2006}{All India Rank 1045 out of 300,000 participants}{Uttar Pradesh State Entrance Exam (SEE-UPTU)}{}{}{\empty}
+    \cventry{2006}{Among top 10 students from Agra city}{Intermediate Examination}{}{}{\empty}
+
+\newpage
+
+\hypertarget{manuscripts-under-revise-and-resubmit}{%
+\section{Manuscripts under Revise and
+Resubmit}\label{manuscripts-under-revise-and-resubmit}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+%
+  \par%
+  \medskip
+  \leftskip=2em\rightskip=0em%
+  \noindent\ignorespaces
+\leavevmode\hypertarget{ref-pe}{}
+\textbf{Vidhani, N.}, (2021). \textbf{\textit{Return Predictability using
+Price-to-Earnings Ratio}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3910641}.\\
+\textbf{Revise and Resubmit:} Journal of Forecasting, ABDC-A\\
+\textbf{Impact Factor:} 2.31\\
+\textbf{Conferences:} \textit{International Conference on Derivatives and Capital Markets (ICDCM-2021)\textsuperscript{\#}, World Finance and Banking Symposium (WFBS-2021)\textsuperscript{\#}, India Finance Conference (IFC-2021)\textsuperscript{\#}, 15th NYCU International Finance Conference (2021)\textsuperscript{\#}}\\
+\textit{\textsuperscript{\#} selected but not presented}
+%
+  \par\medskip
+
+%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces
+\textbf{\textit{Abstract:}} In this paper, I revisit the predictive ability of the price to earnings (PE) ratio for future returns. I provide a model of expected returns by decomposing stock price into earnings and PE ratio. While the PE ratio is modeled as a mean-reverting AR(1) process, earnings follow a linear trend. Expected model returns are strongly correlated with future returns. An increase of 1\% in expected returns is associated with 0.5\% higher future returns. To this end, I propose an investment strategy that chooses between equity or debt investment based on predicted expected stock returns and risk-free bond returns. My strategy avoids short-selling and outperforms a buy-and-hold portfolio of stocks.
+%
+  \par\medskip
+
+\endgroup
+
+\hypertarget{manuscripts-under-review}{%
+\section{Manuscripts under Review}\label{manuscripts-under-review}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+%
+  \par%
+  \medskip
+  \leftskip=2em\rightskip=0em%
+  \noindent\ignorespaces
+\leavevmode\hypertarget{ref-krishnan_rangan_vidhani_2020}{}
+Krishnan, M., Rangan, S., \& \textbf{Vidhani, N.}, (2021). \textbf{\textit{Pricing of Earnings in the Presence of Informed Trades: A Simple GMM Approach}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3560147}.\\
+\textbf{Under Review:} Review of Finance, FT50\\
+\textbf{Conferences:} \textit{2015 NSE-NYU Conference\textsuperscript{\#}, CAFRAL at RBI\textsuperscript{\#}, IIM-Calcutta Finance Research Workshop\textsuperscript{\#}, 3rd JAAF-India Conference\textsuperscript{\#}, IIM Bangalore\textsuperscript{\#}, IIT-Madras\textsuperscript{\#}, IIT-Kharagpur\textsuperscript{\#}, University of Washington\textsuperscript{\#}}\\
+\textit{\textsuperscript{\#} presented by co-authors}
+%
+  \par\medskip
+
+%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces
+\textbf{\textit{Abstract:}} We build a Kyle-type pricing model with earnings and trading signals, where earnings reports also reveal some of the trader's private information. Moment conditions derived from the pricing rule yield a simple way to estimate its deep parameters - the information advantages of traders and firms, the correlation between the firm and trader's information, and the noise variance. For our sample from Indian markets, we find that traders know more about firm payoffs than firms themselves. For many firms, the market's weight on unexpected earnings is negative, causing good news to be bad news. While the trading signal is an information complement to earnings, the earnings signal is an information substitute to the trading signal. In contrast to the many GMM papers on asset pricing where the model has been rejected, our model is not rejected in most instances.
+%
+  \par\medskip
+
+\endgroup
+
+\newpage
+
+\hypertarget{working-papers}{%
+\section{Working Papers}\label{working-papers}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+%
+  \par%
+  \medskip
+  \leftskip=2em\rightskip=0em%
+  \noindent\ignorespaces
+\leavevmode\hypertarget{ref-disagreement_volume}{}
+\textbf{Vidhani, N.}, (2021). \textbf{\textit{Trading Volume and Dispersion of Signals}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3682088}.\\
+\textbf{Submission Journal:} The Journal of Finance, FT50\\
+\textbf{Conferences:} \textit{International Conference on Derivatives and Capital Markets (ICDCM-2020), International Risk Management Conference (IRMC-2020), Southern Finance Association (SFA-2020), Conference on Asia-Pacific Financial Markets (CAFM-2020) Doctoral Consortium, World Finance and Banking Symposium (WFBS-2020), Theories and Practices of Securities and Financial Markets (SFM-2020), 12th Emerging Market Finance Conference (2020), Southwestern Finance Association (SWFA-2021), International Conference of the French Finance Association (AFFI-2021), IIM Bangalore}
+%
+  \par\medskip
+
+%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces
+\textbf{\textit{Abstract:}} I propose a new measure of investor disagreement based on thirty-nine factors from the return-predicting anomaly literature. Consistent with theoretical work on volume, I show that a one standard deviation change in anomaly-based disagreement is associated with a 16.7\% higher turnover in the next period. The positive and significant relationship is robust to different specifications, alternative measures of turnover and disagreement, and different periods. Disagreement effects are stronger for firms with more complex information releases. Anomaly-based disagreement also explains analyst behaviour and positively relates to their forecast dispersion and absolute forecast errors in earnings and target prices.
+%
+  \par\medskip
+
+\endgroup
+
+\hypertarget{work-in-progress}{%
+\section{Work in Progress}\label{work-in-progress}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+%
+  \par%
+  \medskip
+  \leftskip=2em\rightskip=0em%
+  \noindent\ignorespaces
+\leavevmode\hypertarget{ref-conservatism}{}
+Rangan, S., \& \textbf{Vidhani, N.}, (2021). \textbf{\textit{New Evidence on Accounting Conservatism}}.
+%
+  \par\medskip
+
+%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces
+\textbf{\textit{Abstract:}} We present new evidence on asymmetric timeliness, i.e. conservatism, where earnings display increased sensitivity to returns in bad periods. We document evidence of big bath where firms reduce earnings in periods of extreme positive returns. The accrual component of earnings explain conservatism while cash flows account for big bath. Firms increase their write downs in periods of extreme negative as well as positive returns.
+%
+  \par\medskip
+
+\endgroup
+
+\hypertarget{other-publications}{%
+\section{Other Publications}\label{other-publications}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_published}{}
+%
+  \par%
+  \medskip
+  \leftskip=2em\rightskip=0em%
+  \noindent\ignorespaces
+\leavevmode\hypertarget{ref-adwiser}{}
+Sunny, A., Panchal, S., \textbf{Vidhani, N.}, Krishnasamy, S., Anand, S., Hegde, M., Kuri, J., \& Kumar, A. (2017). \textbf{\textit{A generic controller for managing TCP transfers in IEEE 802.11 infrastructure WLANs}}. Journal of Network and Computer Applications, Vol 93, pp 13--26. \underline{DOI:} \url{https://doi.org/10.1016/j.jnca.2017.05.006}.\\
+\textbf{Impact Factor:} 6.28\\
+\underline{Part of Master's Thesis}
+%
+  \par\medskip
+
+\endgroup
+
+\newpage
+
+\hypertarget{conference-presentations}{%
+\section{Conference Presentations}\label{conference-presentations}}
+
+\nopagebreak
+    \cventry{May 2021}{International Conference of the French Finance Association (AFFI)}{Trading volume and dispersion of signals}{Audencia Business School, France}{}{\empty}
+    \cventry{Mar 2021}{Southwestern Finance Association (SWFA)}{Trading volume and dispersion of signals}{}{}{\empty}
+    \cventry{Dec 2020}{11th Emerging Market Finance Conference}{Trading volume and dispersion of signals}{Finance Research Group, Mumbai}{}{\empty}
+    \cventry{Dec 2020}{Theories and Practices of Securities and Financial Markets (SFM)}{Trading volume and dispersion of signals}{National Sun Yat-sen University, Taiwan}{}{\empty}
+    \cventry{Dec 2020}{World Finance and Banking Symposium}{Trading volume and dispersion of signals}{University of Latvia, Latvia}{}{\empty}
+    \cventry{Dec 2020}{15th Conference on Asia-Pacific Financial Markets (CAFM)}{Trading volume and dispersion of signals}{Korean Securities Association, Seoul, Korea}{}{\empty}
+    \cventry{Nov 2020}{Southern Finance Association (SFA)}{Trading volume and dispersion of signals}{Palm Springs, California, USA}{}{\empty}
+    \cventry{Oct 2020}{International Risk Management Conference (IRMC)}{Trading volume and dispersion of signals}{The Risk Society, Italy}{}{\empty}
+    \cventry{Aug 2020}{International Conference on Derivatives and Capital Markets (ICDCM)}{Trading volume and dispersion of signals}{Shandong University, China}{}{\empty}
+    \cventry{Sep 2019}{Talk given to finance group at IIM, Bangalore}{Trading volume and dispersion of signals}{IIM Bangalore}{}{\empty}
+
+\hypertarget{discussant}{%
+\section{Discussant}\label{discussant}}
+
+\nopagebreak
+    \cventry{Mar 2021}{Southwestern Finance Association (SWFA)}{Trade Time Clustering (Black, Jain and Sun)}{}{}{\empty}
+    \cventry{Nov 2020}{Southern Finance Association (SFA)}{Long-term Capital Gains Taxes and Stock Prices: Evidence from India (Mohammadali Fallah and Palani-Rajan Kadapakkam)}{Palm Springs, California, USA}{}{\empty}
+    \cventry{Aug 2020}{International Conference on Derivatives and Capital Markets (ICDCM)}{Capital Gains Tax and Market Quality (Capelle-Blancard and Khemakhem)}{The Risk Society, Italy}{}{\empty}
+
+\hypertarget{workshops}{%
+\section{Workshops}\label{workshops}}
+
+\nopagebreak
+    \cventry{June 2021}{Teaching and Learning Workshop}{Centre for Teaching and Learning, IIM Bangalore}{}{}{\empty}
+    \cventry{Jan 2021}{Teaching Workshop for Doctoral Students}{Centre for Teaching and Learning, IIM Bangalore}{}{}{\empty}
+
+\hypertarget{research-and-teaching-assistantship}{%
+\section{Research and Teaching
+Assistantship}\label{research-and-teaching-assistantship}}
+
+\nopagebreak
+    \cventry{2019--2020}{Corporate Finance (TA)}{Managing McGraw Hill Connect Online examination}{}{}{\empty}
+    \cventry{2019--2020}{Financial Accounting (TA)}{Grading}{}{}{\empty}
+    \cventry{2019}{Global Securities Management (TA)}{Grading}{}{}{\empty}
+    \cventry{2018}{Asset Pricing PhD course (TA)}{Replicating Fama French (1992) factors from scratch in R}{}{}{\empty}
+    \cventry{2018}{Thomson Reuters (RA)}{Excel Automation of Reuters Eikon data downlaod}{}{}{\empty}
+    \cventry{2017}{Buying vs Renting a House (RA)}{Developing research idea}{}{}{\empty}
+
+\hypertarget{tools-and-skills}{%
+\section{Tools and Skills}\label{tools-and-skills}}
+
+\nopagebreak
+    \cventry{}{R Programming and Data Analysis}{Expert}{}{}{\empty}
+    \cventry{}{Python}{Advanced}{}{}{\empty}
+    \cventry{}{MS Office, Rmarkdown and Latex}{Advanced}{}{}{\empty}
+
+\hypertarget{research-databases}{%
+\section{Research Databases}\label{research-databases}}
+
+\begingroup
+%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces
+
+CRSP, Compustat, IBES, Wharton Research Data Services (WRDS) databases, CMIE Prowess-dx, NSE Trade/Order book, Bloomberg Terminal, Thomson Reuters Eikon, Factiva News database, Twitter API, SEC EDGAR, Calcbench.
+
+%
+  \par\medskip
+\endgroup
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\nopagebreak
+    \cventry{}{Sankarshan Basu}{sankarshan.basu@iimb.ac.in}{Professor, Indian Institute of Management, Bangalore}{}{\empty}
+    \cventry{}{Srinivasan Rangan}{srinivasanr@iimb.ac.in}{Associate Professor, Indian Institute of Management, Bangalore}{}{\empty}
+    \cventry{}{Murugappa Krishnan}{murgie@uw.edu}{Professor, University of Washington, Bothell}{}{\empty}
+    \cventry{}{Anurag Kumar}{anurag@iisc.ac.in}{Honorary Professor and ex-Director, Indian Institute of Science}{}{\empty}
+
+
+\end{document}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

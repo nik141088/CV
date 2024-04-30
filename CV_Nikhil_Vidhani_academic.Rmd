@@ -1,0 +1,483 @@
+---
+# Help on how to format Rmarkdown CV can be found at: https://cran.r-project.org/web/packages/vitae/vignettes/vitae.html
+
+name: Nikhil
+surname: Vidhani
+position: "Ph.D., Finance and Accounting, IIM Bangalore"
+# address: "Finance and Accounting, Indian Institute of Management, Bangalore"
+# profilepic: "C:/Users/nikhi/Dropbox/research/CV/nikhil-vidhani.jpg"
+email: nikhil.vidhani16@iimb.ac.in, nikhil141088@gmail.com
+www: "sites.google.com/view/nikhilvidhani"
+phone: "+91-797-555-7296"
+profilepic: nikhil-vidhani.jpg
+linkedin: "nikhil-vidhani-43a74424"
+# www: "www.iimb.ac.in/node/387"
+# orcid: 0000-0002-8283-9226
+# twitter: niks_nikhil
+# github: nik141088
+# To find orcid use: rorcid::orcid_search("Nikhil", "Vidhani")$orcid
+headcolor: "A52A2A" # color of CV headings. More colors at: http://latexcolor.com/
+date: "`r format(Sys.time(), '%B %Y')`"
+# aboutme: About me! About me! About me! About me! About me! About me! About me! About me! About me! About me! About me! About me!
+docname: Curriculum Vitae
+header-includes:
+    - \usepackage{ragged2e}
+    - \usepackage{comment}
+output:
+  vitae::moderncv:
+  # vitae::awesomecv:
+  # vitae::hyndman:
+    keep_tex: true
+    theme: casual
+    # theme: classic
+    # theme: oldstyle
+    # theme: banking
+    # theme: fancy
+csl: apa-cv.csl # change this if you want to use other citation styles
+# bibliography_published: "published.bib" # use separate .bib files and assign each of them a unique key: bibliography_*
+# bibliography_under_review: "under_review.bib"
+# bibliography_working_paper: "working_paper.bib"
+# bibliography_work_in_progress: "work_in_progress.bib"
+# bibliography_presentations: "presentations.bib"
+nocite: '@*' # don't change this if you want to print out all the refs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae);
+
+setwd("C:/Users/nikhi/Dropbox/research/CV/");
+
+# process yaml options
+temp = readLines("CV.Rmd");
+idx = which(temp == "---"); # identify yaml portion of Rmd file
+temp = temp[idx[1]:idx[2]];
+yaml = yaml::yaml.load(temp);
+```
+
+
+\newenvironment{smallblockquote}{%
+  \par%
+  \medskip
+  \leftskip=2em\rightskip=0em%
+  \noindent\ignorespaces}{%
+  \par\medskip}
+
+
+\newenvironment{blockquote}{%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces}{%
+  \par\medskip}
+
+
+
+
+
+
+
+
+# Research Interests
+
+\begingroup
+\begin{blockquote}
+
+Empirical Asset Pricing, Return Anomalies, Investor Disagreement, Textual analysis.
+
+\end{blockquote}
+\endgroup
+
+
+
+
+
+
+
+
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree,
+  ~ Course,
+  ~ Year,
+  ~ Institute,
+  ~ Grade,
+  
+  "Doctor of Philosophy",
+  "Finance and Accounting",
+  "2016--2022 (Defended)",
+  "Indian Institute of Management, Bangalore",
+  "CGPA: 3.64 / 4.00",
+  
+  "Master of Engineering",
+  "Telecommunications Engineering",
+  "2010--2012",
+  "Indian Institute of Science, Bangalore",
+  "CGPA: 6.4 / 8.0; Project Grade: A",
+  
+  "Bachelor of Technology",
+  "Electronics and Communication Engg.",
+  "2006--2010",
+  "Bundelkhand Institute of Engg. and Tech., Jhansi (U.P.)",
+  "73.6 %",
+  
+  "Intermediate (12th Standard)",
+  "Science",
+  "2006",
+  "C.B.S.E.",
+  "88.2 %",
+
+  "High School (10th Standard)",
+  "",
+  "2004",
+  "C.B.S.E.",
+  "81.6 %",
+) %>% 
+  detailed_entries(what = Degree, when = Year, with = Course, where = Institute, why = Grade)
+```
+
+
+
+
+
+
+
+
+
+# Industry and Teaching Experience
+
+```{r}
+library(tibble)
+tribble(
+  ~ job_title, ~ year, ~ course, ~ responsibilities,
+  "Primary Instructor", "Jan 2022 (ongoing)", "Applied R for Econometrics", "7 lectures",
+  "Primary Instructor (Rating: 4.7/5)", "2021", "Introduction to Latex", "Course design; 2 online lectures; Hands-on lab",
+  "Primary Instructor (Rating: 4.6/5)", "2021", "R Programming and Data Analysis course for IIMB Predoctoral students", "Course design; 10 online lectures; Assignments, quizzes and lab",
+  "Primary Instructor", "2018--2019", "R Langauge course for incoming IIMB PhD students", "Course design; 6 lectures; Assignments; Hands-on lab",
+  "Software Engineer", "2012--2016", "Cisco Systems, Bangalore", "4G LTE networks; Wireless Controller",
+) %>% 
+  detailed_entries(what = course, when = year, with = job_title, where = responsibilities)
+```
+
+
+
+
+
+
+
+
+# Awards and Honors
+
+```{r}
+tribble(
+  ~Year, ~Award, ~Institution,
+  2020, "Mirae Asset Scholarship (PhD Year 5)", "Indian Institute of Management",
+  2018, "Director's Merit List (PhD Year 2)", "Indian Institute of Management",
+  2017, "Director's Merit List (PhD Year 1)", "Indian Institute of Management",
+  2016, "96.5 percentile", "Common Aptitute Test (CAT)",
+  2010, "Ministry of HRD Scholarship (2 years)", "Indian Institute of Science",
+  2010, "All India Rank 20 out of 105,000 participants", "Graduate Aptitude Test in Engineering (GATE)",
+  2007, "Merit Scholarship (top 10 students across institute)", "Bundelkhand Institute of Engg. and Tech.",
+  2006, "All India Rank 1045 out of 300,000 participants", "Uttar Pradesh State Entrance Exam (SEE-UPTU)",
+  2006, "Among top 10 students from Agra city", "Intermediate Examination",
+) %>% 
+  detailed_entries(what = Award, with = Institution, when = Year)
+```
+
+
+
+
+
+
+
+
+
+\newpage
+# Manuscripts under Revise and Resubmit 
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\begin{smallblockquote}
+\leavevmode\hypertarget{ref-pe}{}
+\textbf{Vidhani, N.}, (2021). \textbf{\textit{Return Predictability using
+Price-to-Earnings Ratio}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3910641}.\\
+\textbf{Revise and Resubmit:} Journal of Forecasting, ABDC-A\\
+\textbf{Impact Factor:} 2.31\\
+\textbf{Conferences:} \textit{International Conference on Derivatives and Capital Markets (ICDCM-2021)\textsuperscript{\#}, World Finance and Banking Symposium (WFBS-2021)\textsuperscript{\#}, India Finance Conference (IFC-2021)\textsuperscript{\#}, 15th NYCU International Finance Conference (2021)\textsuperscript{\#}}\\
+\textit{\textsuperscript{\#} selected but not presented}
+\end{smallblockquote}
+
+\begin{blockquote}
+\textbf{\textit{Abstract:}} In this paper, I revisit the predictive ability of the price to earnings (PE) ratio for future returns. I provide a model of expected returns by decomposing stock price into earnings and PE ratio. While the PE ratio is modeled as a mean-reverting AR(1) process, earnings follow a linear trend. Expected model returns are strongly correlated with future returns. An increase of 1\% in expected returns is associated with 0.5\% higher future returns. To this end, I propose an investment strategy that chooses between equity or debt investment based on predicted expected stock returns and risk-free bond returns. My strategy avoids short-selling and outperforms a buy-and-hold portfolio of stocks.
+\end{blockquote}
+
+\endgroup
+
+
+
+
+
+
+
+
+
+
+# Manuscripts under Review 
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\begin{smallblockquote}
+\leavevmode\hypertarget{ref-krishnan_rangan_vidhani_2020}{}
+Krishnan, M., Rangan, S., \& \textbf{Vidhani, N.}, (2021). \textbf{\textit{Pricing of Earnings in the Presence of Informed Trades: A Simple GMM Approach}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3560147}.\\
+\textbf{Under Review:} Review of Finance, FT50\\
+\textbf{Conferences:} \textit{2015 NSE-NYU Conference\textsuperscript{\#}, CAFRAL at RBI\textsuperscript{\#}, IIM-Calcutta Finance Research Workshop\textsuperscript{\#}, 3rd JAAF-India Conference\textsuperscript{\#}, IIM Bangalore\textsuperscript{\#}, IIT-Madras\textsuperscript{\#}, IIT-Kharagpur\textsuperscript{\#}, University of Washington\textsuperscript{\#}}\\
+\textit{\textsuperscript{\#} presented by co-authors}
+\end{smallblockquote}
+
+\begin{blockquote}
+\textbf{\textit{Abstract:}} We build a Kyle-type pricing model with earnings and trading signals, where earnings reports also reveal some of the trader's private information. Moment conditions derived from the pricing rule yield a simple way to estimate its deep parameters - the information advantages of traders and firms, the correlation between the firm and trader's information, and the noise variance. For our sample from Indian markets, we find that traders know more about firm payoffs than firms themselves. For many firms, the market's weight on unexpected earnings is negative, causing good news to be bad news. While the trading signal is an information complement to earnings, the earnings signal is an information substitute to the trading signal. In contrast to the many GMM papers on asset pricing where the model has been rejected, our model is not rejected in most instances.
+\end{blockquote}
+
+\endgroup
+
+
+
+
+
+
+
+
+\newpage
+
+# Working Papers
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\begin{smallblockquote}
+\leavevmode\hypertarget{ref-disagreement_volume}{}
+\textbf{Vidhani, N.}, (2021). \textbf{\textit{Trading Volume and Dispersion of Signals}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3682088}.\\
+\textbf{Submission Journal:} The Journal of Finance, FT50\\
+\textbf{Conferences:} \textit{International Conference on Derivatives and Capital Markets (ICDCM-2020), International Risk Management Conference (IRMC-2020), Southern Finance Association (SFA-2020), Conference on Asia-Pacific Financial Markets (CAFM-2020) Doctoral Consortium, World Finance and Banking Symposium (WFBS-2020), Theories and Practices of Securities and Financial Markets (SFM-2020), 12th Emerging Market Finance Conference (2020), Southwestern Finance Association (SWFA-2021), International Conference of the French Finance Association (AFFI-2021), IIM Bangalore}
+\end{smallblockquote}
+
+\begin{blockquote}
+\textbf{\textit{Abstract:}} I propose a new measure of investor disagreement based on thirty-nine factors from the return-predicting anomaly literature. Consistent with theoretical work on volume, I show that a one standard deviation change in anomaly-based disagreement is associated with a 16.7\% higher turnover in the next period. The positive and significant relationship is robust to different specifications, alternative measures of turnover and disagreement, and different periods. Disagreement effects are stronger for firms with more complex information releases. Anomaly-based disagreement also explains analyst behaviour and positively relates to their forecast dispersion and absolute forecast errors in earnings and target prices.
+\end{blockquote}
+
+\endgroup
+
+
+
+
+
+
+
+
+# Work in Progress
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\begin{smallblockquote}
+\leavevmode\hypertarget{ref-conservatism}{}
+Rangan, S., \& \textbf{Vidhani, N.}, (2021). \textbf{\textit{New Evidence on Accounting Conservatism}}.
+\end{smallblockquote}
+
+\begin{blockquote}
+\textbf{\textit{Abstract:}} We present new evidence on asymmetric timeliness, i.e. conservatism, where earnings display increased sensitivity to returns in bad periods. We document evidence of big bath where firms reduce earnings in periods of extreme positive returns. The accrual component of earnings explain conservatism while cash flows account for big bath. Firms increase their write downs in periods of extreme negative as well as positive returns.
+\end{blockquote}
+
+
+\endgroup
+
+
+
+
+
+
+
+
+
+
+# Other Publications
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_published}{}
+\begin{smallblockquote}
+\leavevmode\hypertarget{ref-adwiser}{}
+Sunny, A., Panchal, S., \textbf{Vidhani, N.}, Krishnasamy, S., Anand, S., Hegde, M., Kuri, J., \& Kumar, A. (2017). \textbf{\textit{A generic controller for managing TCP transfers in IEEE 802.11 infrastructure WLANs}}. Journal of Network and Computer Applications, Vol 93, pp 13--26. \underline{DOI:} \url{https://doi.org/10.1016/j.jnca.2017.05.006}.\\
+\textbf{Impact Factor:} 6.28\\
+\underline{Part of Master's Thesis}
+\end{smallblockquote}
+
+<!-- ::: {#refs_published} -->
+<!-- ::: -->
+
+\endgroup
+
+
+
+
+
+
+
+
+\newpage
+
+# Conference Presentations
+
+```{r}
+tribble(
+  ~Year, ~Conference, ~Title, ~Place,
+  "May 2021", "International Conference of the French Finance Association (AFFI)", "Trading volume and dispersion of signals", "Audencia Business School, France",
+  "Mar 2021", "Southwestern Finance Association (SWFA)", "Trading volume and dispersion of signals", "",
+  "Dec 2020", "11th Emerging Market Finance Conference", "Trading volume and dispersion of signals", "Finance Research Group, Mumbai",
+  "Dec 2020", "Theories and Practices of Securities and Financial Markets (SFM)", "Trading volume and dispersion of signals", "National Sun Yat-sen University, Taiwan",
+  "Dec 2020", "World Finance and Banking Symposium", "Trading volume and dispersion of signals", "University of Latvia, Latvia",
+  "Dec 2020", "15th Conference on Asia-Pacific Financial Markets (CAFM)", "Trading volume and dispersion of signals", "Korean Securities Association, Seoul, Korea",
+  "Nov 2020", "Southern Finance Association (SFA)", "Trading volume and dispersion of signals", "Palm Springs, California, USA",
+  "Oct 2020", "International Risk Management Conference (IRMC)", "Trading volume and dispersion of signals", "The Risk Society, Italy",
+  "Aug 2020", "International Conference on Derivatives and Capital Markets (ICDCM)", "Trading volume and dispersion of signals", "Shandong University, China",
+  "Sep 2019", "Talk given to finance group at IIM, Bangalore", "Trading volume and dispersion of signals", "IIM Bangalore",
+) %>% 
+  detailed_entries(what = Conference, with = Title, when = Year, where = Place)
+```
+
+
+
+
+
+
+
+
+
+
+
+# Discussant
+
+```{r}
+tribble(
+  ~Year, ~Conference, ~Title, ~Place,
+  "Mar 2021", "Southwestern Finance Association (SWFA)", "Trade Time Clustering (Black, Jain and Sun)", "",
+  "Nov 2020", "Southern Finance Association (SFA)", "Long-term Capital Gains Taxes and Stock Prices: Evidence from India (Mohammadali Fallah and Palani-Rajan Kadapakkam)", "Palm Springs, California, USA",
+  "Aug 2020", "International Conference on Derivatives and Capital Markets (ICDCM)", "Capital Gains Tax and Market Quality (Capelle-Blancard and Khemakhem)", "The Risk Society, Italy",
+) %>% 
+  detailed_entries(what = Conference, with = Title, when = Year, where = Place)
+```
+
+
+
+
+
+
+
+
+
+# Workshops
+
+```{r}
+tribble(
+  ~Year, ~Workshop, ~Title,
+  "June 2021", "Teaching and Learning Workshop", "Centre for Teaching and Learning, IIM Bangalore",
+  "Jan 2021", "Teaching Workshop for Doctoral Students", "Centre for Teaching and Learning, IIM Bangalore",
+) %>% 
+  detailed_entries(what = Workshop, with = Title, when = Year)
+```
+
+
+
+
+
+
+
+
+
+# Research and Teaching Assistantship
+
+```{r}
+tribble(
+  ~Year, ~Name, ~Duty,
+  "2019--2020", "Corporate Finance (TA)", "Managing McGraw Hill Connect Online examination",
+  "2019--2020", "Financial Accounting (TA)", "Grading",
+  "2019", "Global Securities Management (TA)", "Grading",
+  "2018", "Asset Pricing PhD course (TA)", "Replicating Fama French (1992) factors from scratch in R",
+  "2018", "Thomson Reuters (RA)", "Excel Automation of Reuters Eikon data downlaod",
+  "2017", "Buying vs Renting a House (RA)", "Developing research idea",
+) %>% 
+  detailed_entries(what = Name, with = Duty, when = Year)
+```
+
+
+
+
+
+
+
+
+# Tools and Skills
+
+```{r}
+library(tibble)
+tribble(
+  ~skill, ~level,
+  "R Programming and Data Analysis", "Expert",
+  "Python", "Advanced",
+  "MS Office, Rmarkdown and Latex", "Advanced",
+) %>% 
+  detailed_entries(what = skill, with = level)
+```
+
+
+
+
+
+
+
+
+# Research Databases
+
+\begingroup
+\begin{blockquote}
+
+CRSP, Compustat, IBES, Wharton Research Data Services (WRDS) databases, CMIE Prowess-dx, NSE Trade/Order book, Bloomberg Terminal, Thomson Reuters Eikon, Factiva News database, Twitter API, SEC EDGAR, Calcbench.
+
+\end{blockquote}
+\endgroup
+
+
+
+
+
+
+# References
+
+```{r}
+tribble(
+  ~name, ~title, ~contact,
+  "Sankarshan Basu",  "Professor, Indian Institute of Management, Bangalore", "sankarshan.basu@iimb.ac.in",
+  "Srinivasan Rangan",  "Associate Professor, Indian Institute of Management, Bangalore", "srinivasanr@iimb.ac.in",
+  "Murugappa Krishnan",  "Professor, University of Washington, Bothell", "murgie@uw.edu",
+  "Anurag Kumar",  "Honorary Professor and ex-Director, Indian Institute of Science", "anurag@iisc.ac.in",
+) %>% 
+  detailed_entries(what = name, where = title, with = contact)
+```
+
+
+
+
+
+
