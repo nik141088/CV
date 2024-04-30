@@ -46,10 +46,10 @@ nocite: '@*' # don't change this if you want to print out all the refs
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(vitae);
 
-setwd("C:/Users/nikhi/Dropbox/research/CV/");
+setwd("C:/Users/nikhi/Dropbox/GitHub/CV/");
 
 # process yaml options
-temp = readLines("CV.Rmd");
+temp = readLines("CV_Nikhil_Vidhani_academic.Rmd");
 idx = which(temp == "---"); # identify yaml portion of Rmd file
 temp = temp[idx[1]:idx[2]];
 yaml = yaml::yaml.load(temp);

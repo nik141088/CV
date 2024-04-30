@@ -44,7 +44,7 @@ library(vitae);
 
 # check whether system is windows
 if (.Platform$OS.type == "windows") {
-  setwd("C:/Users/nikhi/Dropbox/research/CV_Nikhil_Vidhani_2024/")
+  setwd("C:/Users/nikhi/Dropbox/GitHub/CV/");
 } else {
   setwd("/Users/Z00BV4R/Desktop/CV_Nikhil_Vidhani_2024/")
 }
