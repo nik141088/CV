@@ -1,0 +1,418 @@
+---
+# Help on how to format Rmarkdown CV can be found at: https://cran.r-project.org/web/packages/vitae/vignettes/vitae.html
+
+name: Nikhil
+surname: Vidhani
+position: "Lead Data Scientist, Target Corporation"
+profilepic: nikhil-wns-pic.jpg
+
+phone: "+91-797-555-7296"
+linkedin: "nikhil-vidhani"
+email: nikhil141088@gmail.com
+# www: sites.google.com/view/nikhilvidhani
+github: nik141088
+
+headcolor: "A52A2A" # color of CV headings. More colors at: http://latexcolor.com/
+date: "`r format(Sys.time(), '%B %Y')`"
+# aboutme: About me! About me! About me! About me! About me! About me! About me! About me! About me! About me! About me! About me!
+docname: Curriculum Vitae
+header-includes:
+    - \usepackage{ragged2e}
+    - \usepackage{comment}
+output:
+  vitae::moderncv:
+  # vitae::awesomecv:
+  # vitae::hyndman:
+    keep_tex: true
+    theme: casual
+    # theme: classic
+    # theme: oldstyle
+    # theme: banking
+    # theme: fancy
+csl: apa-cv.csl # change this if you want to use other citation styles
+# bibliography_published: "published.bib" # use separate .bib files and assign each of them a unique key: bibliography_*
+# bibliography_under_review: "under_review.bib"
+# bibliography_working_paper: "working_paper.bib"
+# bibliography_work_in_progress: "work_in_progress.bib"
+# bibliography_presentations: "presentations.bib"
+nocite: '@*' # don't change this if you want to print out all the refs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae);
+
+# check whether system is windows
+if (.Platform$OS.type == "windows") {
+  setwd("C:/Users/nikhi/Dropbox/research/CV_Nikhil_Vidhani_2024/")
+} else {
+  setwd("/Users/Z00BV4R/Desktop/CV_Nikhil_Vidhani_2024/")
+}
+
+# process yaml options
+temp = readLines("CV_Nikhil_Vidhani_2024.Rmd");
+idx = which(temp == "---"); # identify yaml portion of Rmd file
+temp = temp[idx[1]:idx[2]];
+yaml = yaml::yaml.load(temp);
+```
+
+
+\newenvironment{smallblockquote}{%
+  \par%
+  \medskip
+  \leftskip=2em\rightskip=0em%
+  \noindent\ignorespaces}{%
+  \par\medskip}
+
+
+\newenvironment{blockquote}{%
+  \par%
+  \medskip
+  \leftskip=4em\rightskip=0em%
+  \noindent\ignorespaces}{%
+  \par\medskip}
+
+
+
+
+
+
+
+
+# Executive Summary
+
+\begingroup
+\begin{blockquote}
+
+I work as a Lead Data Scientist in the Digital Fulfillment team at Target Corporation. Our team builds digital supply chain simulation capability, which enables business teams to run what-if scenarios. I earlier worked with WNS Global Services, where I guided a team of data scientists in building data analytics apps in F\&A domain. I hold a Ph.D. in Finance and Accounting from IIM Bangalore and a masters from IISc Bangalore. I have presented my research at several international conferences. Besides, I have also trained hundreds of students and practitioners in R programming and data analysis.
+
+\end{blockquote}
+\endgroup
+
+
+
+
+
+
+
+
+
+<!-- \newpage -->
+
+
+
+
+
+
+
+
+
+# Industry, Research, and Teaching Experience
+
+<!-- \nopagebreak -->
+<!--     \cventry{2022--}{Lead Data Scientist}{Target Corporation, Bangalore}{ -->
+<!--     Building supply chain simulation, available to promise, order allocation, big-data pipelines; -->
+<!--     Leading product fixes, features, release, and code-review; -->
+<!--     Demo/present our capability and resolve user queries}{}{\empty} -->
+<!--     \cventry{2022--2022}{Sr. Group Manager (Data Science)}{WNS Global Services, Bangalore}{ -->
+<!--     Building F\&A apps in payments, collections, reporting, prediction, and auditing; -->
+<!--     Maintain codebase (github), APIs, deployment automation; -->
+<!--     Conduct Knowledge-sharing Sessions}{}{\empty} -->
+<!--     \cventry{2016--2022}{Research Scholar}{Indian Institute of Management, Bangalore}{ -->
+<!--     Ideating research problem; -->
+<!--     Identify data sources, collect/clean/transform data, model building (regression/ML/NLP); -->
+<!--     Drafting research papers and presenting in conferences}{}{\href{https://github.com/nik141088/phd-thesis-rmarkdown}{click}} -->
+<!--     \cventry{2018--2022}{Primary Instructor}{Programming and Data Analysis}{ -->
+<!--     Took multiple short/long courses on R programming, data analysis, and LaTeX; -->
+<!--     Instructor Rating: 4.7/5}{}{\href{https://github.com/nik141088/applied-R}{click}} -->
+<!--     \cventry{2012--2016}{Sr. Software Engineer}{Cisco Systems, Bangalore}{ -->
+<!--     Design, implement, test, review, and documentation of 4G-LTE and WiFi systems; -->
+<!--     High Availability/Redundancy architecture; -->
+<!--     Network security}{}{\empty} -->
+
+
+```{r, eval=TRUE}
+library(tibble)
+tribble(
+  ~ job_title, ~ year, ~ company, ~ responsibilities,
+  
+  "Lead Data Scientist", "2022--", "Target Corporation, Bangalore",
+  "Building supply chain simulation, available to promise, order allocation, big-data pipelines; Leading product fixes, features, release, and code-review; Demo/present our capability and resolve user queries",
+  
+  "Sr. Group Manager (Data Science)", "2022--2022", "WNS Global Services, Bangalore",
+  "Building F&A apps in payments, collections, reporting, prediction, and auditing; Maintain codebase (github), APIs, deloyment automation; Conduct Knowledge-sharing Sessions",
+  
+  "Research Scholar", "2016--2022", "Indian Institute of Management, Bangalore",
+  "Ideating research problem; Identify data sources, collect/clean/transform data, model building (regression/ML/NLP); Drafting research papers and presenting in conferences. https://github.com/nik141088/phd-thesis-rmarkdown",
+  
+  "Primary Instructor", "2018--2022", "Programming and Data Analysis", "Took multiple short/long courses on R programming, data analysis, and LaTeX; Instructor Rating: 4.7/5. https://github.com/nik141088/applied-R",
+  
+  "Sr. Software Engineer", "2012--2016", "Cisco Systems, Bangalore",
+  "Design, implement, test, review, and documentation of 4G-LTE and WiFi systems; High Availability/Redundancy architecture; Network security"
+) %>% 
+  detailed_entries(with = company, when = year, what = job_title, where = responsibilities)
+```
+
+
+
+
+
+
+
+
+
+<!-- \newpage -->
+
+
+
+
+
+
+
+
+
+# Major Projects
+
+```{r}
+library(tibble)
+tribble(
+  ~place, ~title, ~details,
+  
+  "Target", "Simulations Capability",
+  "Led a team of three to develop and implement new features, fixes, and releases for a simulation tool utilized by over 50 users in network planning, store operations, and demand forecasting. Facilitated user interactions for custom data inputs and configurations to analyze various supply chain scenarios and their impacts",
+  
+  "Target", "Promise Simulator",
+  "Developed an Available-to-Promise (ATP) simulator from inception, involving deep product analysis, algorithm design, and data pipeline construction. Conducted thorough testing and validation against actuals, integrated with existing systems, and managed deployment to production",
+
+  "Target", "Logging Infra",
+  "Engineered a post-mortem analysis tool to evaluate simulation outputs, transforming sequential tasks into parallel processes to expedite log generation. Implemented detailed logging for granular scrutiny of allocation decisions",
+
+  "WNS", "QA Analytics",
+  "Highly configurable workflow tool designed to catch human errors in invoice indexing. The tool also provides a one-stop solution for outlier and anomalous transaction detection. Used by multiple auditors within WNS",
+  
+  "WNS", "Excel-API",
+  "ML solution built with h2o framework and deployed through portable-R and plumber API. Helps controllers predict errors right from the comfort of excel. https://github.com/nik141088/plumber-R-and-python",
+  
+  "WNS", "WNS Predictor",
+  "A shiny application focused on democratizing machine learning by automating modeling and prediction for non data-scientists",
+
+  "Personal", "Invoice Processing",
+  "Deep Learning based tool to detect duplicate invoices. Comparison based on raw bytes, image, and OCR text. https://github.com/nik141088/invoice-processing",
+  
+  "IIMB", "Factiva Download",
+  "Web-scrapping and article extraction project to study news sentiment and accounting behavior. https://github.com/nik141088/factiva-download",
+
+) %>% 
+  detailed_entries(when = place, what = title, where = details)
+```
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+# Tools and Skills
+
+```{r}
+library(tibble)
+tribble(
+  ~skill, ~level, ~details,
+  
+  "Programming",
+  "Advanced", 
+  "Python, pyspark, hive, R, Shiny, C",
+  
+  "Engineering",
+  "Advanced", 
+  "API, debugging, web-scrapping, Linux, code review, github, git, Databases, AWS, CI/CD",
+  
+  "Machine Learning",
+  "Advanced", 
+  "Regression, Classification, NLP, MLOps (basics), h2o",
+  
+  "Design Principles",
+  "Advanced", 
+  "Data Structures, computational/space complexity, vectorization, functional programming, test-driven development, modular development, security",
+  
+  "Visualization and Documentation",
+  "Advanced", 
+  "ggplot, plotly, R Markdown, Latex, MS Office",
+  
+  "Domain Knowledge",
+  "Expert", 
+  "Last Mile Operations: available to promise and order allocation, Finance, Accounting, Statistics, Regression Analysis",
+  
+  "Leadership",
+  "Progressive", 
+  "Mentoring, product leadership, project management"
+  
+) %>% 
+  detailed_entries(what = skill, when = level, with = details)
+```
+
+
+
+
+
+
+
+
+
+<!-- \newpage -->
+
+
+
+
+
+
+
+
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree,
+  ~ Course,
+  ~ Year,
+  ~ Institute,
+  ~ Grade,
+  
+  "Doctor of Philosophy",
+  "Finance and Accounting",
+  "2016--2022",
+  "Indian Institute of Management, Bangalore",
+  "CGPA: 3.64 / 4.00",
+  
+  "Master of Engineering",
+  "Electrical Communication Engineering",
+  "2010--2012",
+  "Indian Institute of Science, Bangalore",
+  "CGPA: 6.4 / 8.0; Project Grade: A",
+  
+  "Bachelor of Technology",
+  "Electronics and Communication Engg.",
+  "2006--2010",
+  "Bundelkhand Institute of Engg. and Tech., Jhansi (U.P.)",
+  "73.6 %",
+  
+  "Schooling (12th Standard)",
+  "Science",
+  "2004--2006",
+  "C.B.S.E.",
+  "88.2 %",
+) %>% 
+  detailed_entries(what = Degree, when = Year, with = Course, where = Institute, why = Grade)
+```
+
+
+
+
+
+
+
+
+
+<!-- \newpage -->
+
+
+
+
+
+
+
+
+
+# Awards and Honors
+
+
+```{r}
+tribble(
+  ~Year, ~Award, ~Institution,
+  "2022", "Tech Genius, Transforming the Organization, Victory Fleet", "WNS Global Services",
+  "2020", "Mirae Asset Scholarship (PhD Year 5)", "Indian Institute of Management",
+  "2017--2018", "Director's Merit List (PhD Year 1 and 2)", "Indian Institute of Management",
+  "2016", "96.5 percentile", "Common Aptitute Test (CAT)",
+  "2010", "All India Rank 20 out of 105,000 participants", "Graduate Aptitude Test in Engineering (GATE)",
+  "2006--2007", "Merit Scholarships", "Intermediate Examination and Engineering",
+) %>% 
+  detailed_entries(what = Award, with = Institution, when = Year)
+```
+
+
+
+
+
+
+
+
+
+<!-- \newpage -->
+
+
+
+
+
+
+
+
+
+# Publications 
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\begin{smallblockquote}
+Sunny, A., Panchal, S., \textbf{Vidhani, N.}, Krishnasamy, S., Anand, S., Hegde, M., Kuri, J., \& Kumar, A. (2017).
+\textbf{\textit{A generic controller for managing TCP transfers in IEEE 802.11 infrastructure WLANs}}. Journal of Network and Computer Applications, Vol 93, pp 13--26. \underline{DOI:} \url{https://doi.org/10.1016/j.jnca.2017.05.006}.\\
+\end{smallblockquote}
+
+
+\begin{smallblockquote}
+\textbf{Vidhani, N.}, (2022). \textbf{\textit{Trading Volume and Dispersion of Signals}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3682088}.\\
+\textbf{Conferences:} \textit{International Conference on Derivatives and Capital Markets (ICDCM-2020), International Risk Management Conference (IRMC-2020), Southern Finance Association (SFA-2020), Conference on Asia-Pacific Financial Markets (CAFM-2020) Doctoral Consortium, World Finance and Banking Symposium (WFBS-2020), Theories and Practices of Securities and Financial Markets (SFM-2020), 12th Emerging Market Finance Conference (2020), Southwestern Finance Association (SWFA-2021), International Conference of the French Finance Association (AFFI-2021), IIM Bangalore}\\
+\end{smallblockquote}
+
+
+\begin{smallblockquote}
+Krishnan, M., Rangan, S., \& \textbf{Vidhani, N.}, (2021). \textbf{\textit{Pricing of Earnings in the Presence of Informed Trades: A Simple GMM Approach}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3560147}.\\
+\textbf{Conferences:} \textit{2015 NSE-NYU Conference\textsuperscript{\#}, CAFRAL at RBI\textsuperscript{\#}, IIM-Calcutta Finance Research Workshop\textsuperscript{\#}, 3rd JAAF-India Conference\textsuperscript{\#}, IIM Bangalore\textsuperscript{\#}, IIT-Madras\textsuperscript{\#}, IIT-Kharagpur\textsuperscript{\#}, University of Washington\textsuperscript{\#}}\\
+\textit{\textsuperscript{\#} presented by co-authors}\\
+\end{smallblockquote}
+
+\begin{smallblockquote}
+\textbf{Vidhani, N.}, (2022). \textbf{\textit{Return Predictability using
+Price-to-Earnings Ratio}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3910641}.\\
+\textbf{Conferences:} \textit{International Conference on Derivatives and Capital Markets (ICDCM-2021)\textsuperscript{\#}, World Finance and Banking Symposium (WFBS-2021)\textsuperscript{\#}, India Finance Conference (IFC-2021)\textsuperscript{\#}, 15th NYCU International Finance Conference (2021)\textsuperscript{\#}, Asian Management Research and Case Conference (2022)\textsuperscript{\#}}\\
+\textit{\textsuperscript{\#} selected but not presented}\\
+\end{smallblockquote}
+
+
+\endgroup
+
+
+
+
+
+
+
+
+
+
+
+
