@@ -46,7 +46,7 @@ library(vitae);
 if (.Platform$OS.type == "windows") {
   setwd("C:/Users/nikhi/Dropbox/GitHub/CV/");
 } else {
-  setwd("/Users/Z00BV4R/Desktop/CV_Nikhil_Vidhani_2024/")
+  setwd("/Users/Z00BV4R/Documents/GitHub/nik141088/CV/")
 }
 
 # process yaml options
@@ -84,7 +84,7 @@ yaml = yaml::yaml.load(temp);
 \begingroup
 \begin{blockquote}
 
-I work as a Lead Data Scientist in the Digital Fulfillment team at Target Corporation. Our team builds digital supply chain simulation capability, which enables business teams to run what-if scenarios. I earlier worked with WNS Global Services, where I guided a team of data scientists in building data analytics apps in F\&A domain. I hold a Ph.D. in Finance and Accounting from IIM Bangalore and a masters from IISc Bangalore. I have presented my research at several international conferences. Besides, I have also trained hundreds of students and practitioners in R programming and data analysis.
+I work as a Lead Data Scientist in the Digital Fulfillment team at Target Corporation. Our team builds digital supply chain simulation capability, which enables business teams to run what-if scenarios. I earlier worked with WNS Global Services, where I guided a team of data scientists in building data analytics apps in F\&A domain. I hold a Ph.D. in Finance and Accounting from IIM Bangalore and a masters from IISc Bangalore. I have presented my research at several international conferences. Besides, I have also trained hundreds of students and practitioners in programming and data analysis.
 
 \end{blockquote}
 \endgroup
@@ -137,13 +137,13 @@ tribble(
   ~ job_title, ~ year, ~ company, ~ responsibilities,
   
   "Lead Data Scientist", "2022--", "Target Corporation, Bangalore",
-  "Building supply chain simulation, available to promise, order allocation, big-data pipelines; Leading product fixes, features, release, and code-review; Demo/present our capability and resolve user queries",
-  
+  "Building last mile simulation capability, available to promise, digital order allocation, big-data pipelines; Leading product fixes, features, release, and code-review; Demo/present our tool in deepdives and floorwalks; Managing user queries and feedback",
+
   "Sr. Group Manager (Data Science)", "2022--2022", "WNS Global Services, Bangalore",
-  "Building F&A apps in payments, collections, reporting, prediction, and auditing; Maintain codebase (github), APIs, deloyment automation; Conduct Knowledge-sharing Sessions",
+  "Building F&A analytics/ML apps for payments, collections, reporting, prediction, and auditing functions; Maintaining codebase (github), APIs, deloyment, automation; Conduct knowledge-sharing sessions",
   
   "Research Scholar", "2016--2022", "Indian Institute of Management, Bangalore",
-  "Ideating research problem; Identify data sources, collect/clean/transform data, model building (regression/ML/NLP); Drafting research papers and presenting in conferences. https://github.com/nik141088/phd-thesis-rmarkdown",
+  "Ideating research problem; Identify data sources, collect/clean/transform data, model building (regression design); Drafting research papers and presenting in conferences. https://github.com/nik141088/phd-thesis-rmarkdown",
   
   "Primary Instructor", "2018--2022", "Programming and Data Analysis", "Took multiple short/long courses on R programming, data analysis, and LaTeX; Instructor Rating: 4.7/5. https://github.com/nik141088/applied-R",
   
@@ -179,28 +179,28 @@ tribble(
   ~place, ~title, ~details,
   
   "Target", "Simulations Capability",
-  "Led a team of three to develop and implement new features, fixes, and releases for a simulation tool utilized by over 50 users in network planning, store operations, and demand forecasting. Facilitated user interactions for custom data inputs and configurations to analyze various supply chain scenarios and their impacts",
+  "Led a team of three to develop and implement new features, fixes, and releases for a simulation tool utilized by 40+ users across network planning, store operations, and demand forecasting teams. Facilitated user interactions for custom inputs and configurations to analyze various supply chain scenarios and their impacts",
   
   "Target", "Promise Simulator",
   "Developed an Available-to-Promise (ATP) simulator from inception, involving deep product analysis, algorithm design, and data pipeline construction. Conducted thorough testing and validation against actuals, integrated with existing systems, and managed deployment to production",
 
   "Target", "Logging Infra",
-  "Engineered a post-mortem analysis tool to evaluate simulation outputs, transforming sequential tasks into parallel processes to expedite log generation. Implemented detailed logging for granular scrutiny of allocation decisions",
+  "Engineered a post-mortem analysis tool to evaluate simulation outputs, transforming sequential tasks into parallel processes to expedite log generation. Implemented detailed logging for granular scrutiny of allocation decisions. Used for multiple RCAs within team",
 
   "WNS", "QA Analytics",
-  "Highly configurable workflow tool designed to catch human errors in invoice indexing. The tool also provides a one-stop solution for outlier and anomalous transaction detection. Used by multiple auditors within WNS",
+  "Highly configurable workflow tool designed to catch human errors in invoice indexing. Also provides a one-stop solution for outlier and anomalous transaction detection. Single tool deployed for five different audit teams within WNS",
   
   "WNS", "Excel-API",
-  "ML solution built with h2o framework and deployed through portable-R and plumber API. Helps controllers predict errors right from the comfort of excel. https://github.com/nik141088/plumber-R-and-python",
+  "ML solution built with h2o framework and deployed as a standalone zip through portable-R and plumber API. Helps controllers predict errors right from the comfort of excel. Increased audit error incidence by 20x",
   
-  "WNS", "WNS Predictor",
-  "A shiny application focused on democratizing machine learning by automating modeling and prediction for non data-scientists",
+  # "WNS", "WNS Predictor",
+  # "A shiny application focused on democratizing machine learning by automating modeling and prediction for non data-scientists",
 
   "Personal", "Invoice Processing",
-  "Deep Learning based tool to detect duplicate invoices. Comparison based on raw bytes, image, and OCR text. https://github.com/nik141088/invoice-processing",
+  "Deep Learning based tool to compare similar looking invoices. Multi-layer comparison based on image embeddings and OCR text. Can be used to boost data processor's efficiency and productivity. https://github.com/nik141088/invoice-processing",
   
   "IIMB", "Factiva Download",
-  "Web-scrapping and article extraction project to study news sentiment and accounting behavior. https://github.com/nik141088/factiva-download",
+  "Web-scrapping and article extraction project to study news sentiment and accounting behavior. Multi-month effort to download, process and quantify 25+ Mn articles. https://github.com/nik141088/factiva-download",
 
 ) %>% 
   detailed_entries(when = place, what = title, where = details)
@@ -233,11 +233,7 @@ tribble(
   
   "Programming",
   "Advanced", 
-  "Python, pyspark, hive, R, Shiny, C",
-  
-  "Engineering",
-  "Advanced", 
-  "API, debugging, web-scrapping, Linux, code review, github, git, Databases, AWS, CI/CD",
+  "Python, spark, hive, R, Shiny, C",
   
   "Machine Learning",
   "Advanced", 
@@ -246,6 +242,10 @@ tribble(
   "Design Principles",
   "Advanced", 
   "Data Structures, computational/space complexity, vectorization, functional programming, test-driven development, modular development, security",
+  
+  "Engineering",
+  "Advanced", 
+  "API, debugging, web-scrapping, Linux, code review, github, git, Databases, AWS, CI/CD",
   
   "Visualization and Documentation",
   "Advanced", 

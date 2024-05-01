@@ -44,38 +44,22 @@
 \name{Nikhil}{Vidhani}
 \title{Lead Data Scientist, Target Corporation}
 
+
 \phone[mobile]{+91-797-555-7296} % Phone number
 \email{\donothing{\href{mailto:nikhil141088@gmail.com}{\nolinkurl{nikhil141088@gmail.com}}}}
  % Personal website
 \social[linkedin]{nikhil-vidhani}
 
 \social[github]{nik141088}
+
+
+
 % \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 
 \photo[70pt][0.4pt]{nikhil-wns-pic.jpg}
 
 
 % Pandoc CSL macros
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
-  % set entry spacing
-  \ifnum #2 > 0
-  \setlength{\parskip}{#2\baselineskip}
-  \fi
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -105,16 +89,16 @@
 \section{Executive Summary}\label{executive-summary}}
 
 \begingroup
-%
+\bgroup %
   \par%
   \medskip
   \leftskip=4em\rightskip=0em%
   \noindent\ignorespaces
 
-I work as a Lead Data Scientist in the Digital Fulfillment team at Target Corporation. Our team builds digital supply chain simulation capability, which enables business teams to run what-if scenarios. I earlier worked with WNS Global Services, where I guided a team of data scientists in building data analytics apps in F\&A domain. I hold a Ph.D. in Finance and Accounting from IIM Bangalore and a masters from IISc Bangalore. I have presented my research at several international conferences. Besides, I have also trained hundreds of students and practitioners in R programming and data analysis.
+I work as a Lead Data Scientist in the Digital Fulfillment team at Target Corporation. Our team builds digital supply chain simulation capability, which enables business teams to run what-if scenarios. I earlier worked with WNS Global Services, where I guided a team of data scientists in building data analytics apps in F\&A domain. I hold a Ph.D. in Finance and Accounting from IIM Bangalore and a masters from IISc Bangalore. I have presented my research at several international conferences. Besides, I have also trained hundreds of students and practitioners in programming and data analysis.
 
 %
-  \par\medskip
+  \par\medskip\egroup 
 \endgroup
 
 \hypertarget{industry-research-and-teaching-experience}{%
@@ -122,9 +106,9 @@ I work as a Lead Data Scientist in the Digital Fulfillment team at Target Corpor
 Experience}\label{industry-research-and-teaching-experience}}
 
 \nopagebreak
-    \cventry{2022--}{Lead Data Scientist}{Target Corporation, Bangalore}{Building supply chain simulation, available to promise, order allocation, big-data pipelines; Leading product fixes, features, release, and code-review; Demo/present our capability and resolve user queries}{}{\empty}
-    \cventry{2022--2022}{Sr. Group Manager (Data Science)}{WNS Global Services, Bangalore}{Building F\&A apps in payments, collections, reporting, prediction, and auditing; Maintain codebase (github), APIs, deloyment automation; Conduct Knowledge-sharing Sessions}{}{\empty}
-    \cventry{2016--2022}{Research Scholar}{Indian Institute of Management, Bangalore}{Ideating research problem; Identify data sources, collect/clean/transform data, model building (regression/ML/NLP); Drafting research papers and presenting in conferences. https://github.com/nik141088/phd-thesis-rmarkdown}{}{\empty}
+    \cventry{2022--}{Lead Data Scientist}{Target Corporation, Bangalore}{Building last mile simulation capability, available to promise, digital order allocation, big-data pipelines; Leading product fixes, features, release, and code-review; Demo/present our tool in deepdives and floorwalks; Managing user queries and feedback}{}{\empty}
+    \cventry{2022--2022}{Sr. Group Manager (Data Science)}{WNS Global Services, Bangalore}{Building F\&A analytics/ML apps for payments, collections, reporting, prediction, and auditing functions; Maintaining codebase (github), APIs, deloyment, automation; Conduct knowledge-sharing sessions}{}{\empty}
+    \cventry{2016--2022}{Research Scholar}{Indian Institute of Management, Bangalore}{Ideating research problem; Identify data sources, collect/clean/transform data, model building (regression design); Drafting research papers and presenting in conferences. https://github.com/nik141088/phd-thesis-rmarkdown}{}{\empty}
     \cventry{2018--2022}{Primary Instructor}{Programming and Data Analysis}{Took multiple short/long courses on R programming, data analysis, and LaTeX; Instructor Rating: 4.7/5. https://github.com/nik141088/applied-R}{}{\empty}
     \cventry{2012--2016}{Sr. Software Engineer}{Cisco Systems, Bangalore}{Design, implement, test, review, and documentation of 4G-LTE and WiFi systems; High Availability/Redundancy architecture; Network security}{}{\empty}
 
@@ -132,14 +116,13 @@ Experience}\label{industry-research-and-teaching-experience}}
 \section{Major Projects}\label{major-projects}}
 
 \nopagebreak
-    \cventry{Target}{Simulations Capability}{}{Led a team of three to develop and implement new features, fixes, and releases for a simulation tool utilized by over 50 users in network planning, store operations, and demand forecasting. Facilitated user interactions for custom data inputs and configurations to analyze various supply chain scenarios and their impacts}{}{\empty}
+    \cventry{Target}{Simulations Capability}{}{Led a team of three to develop and implement new features, fixes, and releases for a simulation tool utilized by 40+ users across network planning, store operations, and demand forecasting teams. Facilitated user interactions for custom inputs and configurations to analyze various supply chain scenarios and their impacts}{}{\empty}
     \cventry{Target}{Promise Simulator}{}{Developed an Available-to-Promise (ATP) simulator from inception, involving deep product analysis, algorithm design, and data pipeline construction. Conducted thorough testing and validation against actuals, integrated with existing systems, and managed deployment to production}{}{\empty}
-    \cventry{Target}{Logging Infra}{}{Engineered a post-mortem analysis tool to evaluate simulation outputs, transforming sequential tasks into parallel processes to expedite log generation. Implemented detailed logging for granular scrutiny of allocation decisions}{}{\empty}
-    \cventry{WNS}{QA Analytics}{}{Highly configurable workflow tool designed to catch human errors in invoice indexing. The tool also provides a one-stop solution for outlier and anomalous transaction detection. Used by multiple auditors within WNS}{}{\empty}
-    \cventry{WNS}{Excel-API}{}{ML solution built with h2o framework and deployed through portable-R and plumber API. Helps controllers predict errors right from the comfort of excel. https://github.com/nik141088/plumber-R-and-python}{}{\empty}
-    \cventry{WNS}{WNS Predictor}{}{A shiny application focused on democratizing machine learning by automating modeling and prediction for non data-scientists}{}{\empty}
-    \cventry{Personal}{Invoice Processing}{}{Deep Learning based tool to detect duplicate invoices. Comparison based on raw bytes, image, and OCR text. https://github.com/nik141088/invoice-processing}{}{\empty}
-    \cventry{IIMB}{Factiva Download}{}{Web-scrapping and article extraction project to study news sentiment and accounting behavior. https://github.com/nik141088/factiva-download}{}{\empty}
+    \cventry{Target}{Logging Infra}{}{Engineered a post-mortem analysis tool to evaluate simulation outputs, transforming sequential tasks into parallel processes to expedite log generation. Implemented detailed logging for granular scrutiny of allocation decisions. Used for multiple RCAs within team}{}{\empty}
+    \cventry{WNS}{QA Analytics}{}{Highly configurable workflow tool designed to catch human errors in invoice indexing. Also provides a one-stop solution for outlier and anomalous transaction detection. Single tool deployed for five different audit teams within WNS}{}{\empty}
+    \cventry{WNS}{Excel-API}{}{ML solution built with h2o framework and deployed as a standalone zip through portable-R and plumber API. Helps controllers predict errors right from the comfort of excel. Increased audit error incidence by 20x}{}{\empty}
+    \cventry{Personal}{Invoice Processing}{}{Deep Learning based tool to compare similar looking invoices. Multi-layer comparison based on image embeddings and OCR text. Can be used to boost data processor's efficiency and productivity. https://github.com/nik141088/invoice-processing}{}{\empty}
+    \cventry{IIMB}{Factiva Download}{}{Web-scrapping and article extraction project to study news sentiment and accounting behavior. Multi-month effort to download, process and quantify 25+ Mn articles. https://github.com/nik141088/factiva-download}{}{\empty}
 
 \newpage
 
@@ -147,10 +130,10 @@ Experience}\label{industry-research-and-teaching-experience}}
 \section{Tools and Skills}\label{tools-and-skills}}
 
 \nopagebreak
-    \cventry{Advanced}{Programming}{Python, pyspark, hive, R, Shiny, C}{}{}{\empty}
-    \cventry{Advanced}{Engineering}{API, debugging, web-scrapping, Linux, code review, github, git, Databases, AWS, CI/CD}{}{}{\empty}
+    \cventry{Advanced}{Programming}{Python, spark, hive, R, Shiny, C}{}{}{\empty}
     \cventry{Advanced}{Machine Learning}{Regression, Classification, NLP, MLOps (basics), h2o}{}{}{\empty}
     \cventry{Advanced}{Design Principles}{Data Structures, computational/space complexity, vectorization, functional programming, test-driven development, modular development, security}{}{}{\empty}
+    \cventry{Advanced}{Engineering}{API, debugging, web-scrapping, Linux, code review, github, git, Databases, AWS, CI/CD}{}{}{\empty}
     \cventry{Advanced}{Visualization and Documentation}{ggplot, plotly, R Markdown, Latex, MS Office}{}{}{\empty}
     \cventry{Expert}{Domain Knowledge}{Last Mile Operations: available to promise and order allocation, Finance, Accounting, Statistics, Regression Analysis}{}{}{\empty}
     \cventry{Progressive}{Leadership}{Mentoring, product leadership, project management}{}{}{\empty}
@@ -190,7 +173,7 @@ Experience}\label{industry-research-and-teaching-experience}}
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
-%
+\bgroup %
   \par%
   \medskip
   \leftskip=2em\rightskip=0em%
@@ -198,9 +181,9 @@ Experience}\label{industry-research-and-teaching-experience}}
 Sunny, A., Panchal, S., \textbf{Vidhani, N.}, Krishnasamy, S., Anand, S., Hegde, M., Kuri, J., \& Kumar, A. (2017).
 \textbf{\textit{A generic controller for managing TCP transfers in IEEE 802.11 infrastructure WLANs}}. Journal of Network and Computer Applications, Vol 93, pp 13--26. \underline{DOI:} \url{https://doi.org/10.1016/j.jnca.2017.05.006}.\\
 %
-  \par\medskip
+  \par\medskip\egroup
 
-%
+\bgroup %
   \par%
   \medskip
   \leftskip=2em\rightskip=0em%
@@ -208,9 +191,9 @@ Sunny, A., Panchal, S., \textbf{Vidhani, N.}, Krishnasamy, S., Anand, S., Hegde,
 \textbf{Vidhani, N.}, (2022). \textbf{\textit{Trading Volume and Dispersion of Signals}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3682088}.\\
 \textbf{Conferences:} \textit{International Conference on Derivatives and Capital Markets (ICDCM-2020), International Risk Management Conference (IRMC-2020), Southern Finance Association (SFA-2020), Conference on Asia-Pacific Financial Markets (CAFM-2020) Doctoral Consortium, World Finance and Banking Symposium (WFBS-2020), Theories and Practices of Securities and Financial Markets (SFM-2020), 12th Emerging Market Finance Conference (2020), Southwestern Finance Association (SWFA-2021), International Conference of the French Finance Association (AFFI-2021), IIM Bangalore}\\
 %
-  \par\medskip
+  \par\medskip\egroup
 
-%
+\bgroup %
   \par%
   \medskip
   \leftskip=2em\rightskip=0em%
@@ -219,9 +202,9 @@ Krishnan, M., Rangan, S., \& \textbf{Vidhani, N.}, (2021). \textbf{\textit{Prici
 \textbf{Conferences:} \textit{2015 NSE-NYU Conference\textsuperscript{\#}, CAFRAL at RBI\textsuperscript{\#}, IIM-Calcutta Finance Research Workshop\textsuperscript{\#}, 3rd JAAF-India Conference\textsuperscript{\#}, IIM Bangalore\textsuperscript{\#}, IIT-Madras\textsuperscript{\#}, IIT-Kharagpur\textsuperscript{\#}, University of Washington\textsuperscript{\#}}\\
 \textit{\textsuperscript{\#} presented by co-authors}\\
 %
-  \par\medskip
+  \par\medskip\egroup
 
-%
+\bgroup %
   \par%
   \medskip
   \leftskip=2em\rightskip=0em%
@@ -231,7 +214,7 @@ Price-to-Earnings Ratio}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/p
 \textbf{Conferences:} \textit{International Conference on Derivatives and Capital Markets (ICDCM-2021)\textsuperscript{\#}, World Finance and Banking Symposium (WFBS-2021)\textsuperscript{\#}, India Finance Conference (IFC-2021)\textsuperscript{\#}, 15th NYCU International Finance Conference (2021)\textsuperscript{\#}, Asian Management Research and Case Conference (2022)\textsuperscript{\#}}\\
 \textit{\textsuperscript{\#} selected but not presented}\\
 %
-  \par\medskip
+  \par\medskip\egroup
 
 \endgroup
 
