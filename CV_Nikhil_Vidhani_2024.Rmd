@@ -140,7 +140,7 @@ tribble(
   "Building last mile simulation capability, available to promise, digital order allocation, big-data pipelines; Leading product fixes, features, release, and code-review; Demo/present our tool in deepdives and floorwalks; Managing user queries and feedback",
 
   "Sr. Group Manager (Data Science)", "2022--2022", "WNS Global Services, Bangalore",
-  "Building F&A analytics/ML apps for payments, collections, reporting, prediction, and auditing functions; Maintaining codebase (github), APIs, deloyment, automation; Conduct knowledge-sharing sessions",
+  "Building F&A analytics/ML apps for payments, collections, reporting, prediction, and auditing functions; Maintaining codebase (github), APIs, deployment, automation; Conduct knowledge-sharing sessions",
   
   "Research Scholar", "2016--2022", "Indian Institute of Management, Bangalore",
   "Ideating research problem; Identify data sources, collect/clean/transform data, model building (regression design); Drafting research papers and presenting in conferences. https://github.com/nik141088/phd-thesis-rmarkdown",
