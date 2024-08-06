@@ -266,7 +266,7 @@ tribble(
   
   "Domain Knowledge",
   "Expert", 
-  "Last Mile Operations: available to promise and order allocation, Finance, Accounting, Statistics, Regression Analysis",
+  "Last Mile Operations Research: available to promise and order allocation, Finance, Accounting, Statistics, Regression Analysis",
   
   "Leadership",
   "Progressive", 
