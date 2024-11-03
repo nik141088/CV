@@ -84,7 +84,7 @@ yaml = yaml::yaml.load(temp);
 \begingroup
 \begin{blockquote}
 
-I am a Lead Data Scientist at Target Corporation, where I lead a team of data scientists in developing digital supply chain simulations for last mile operations, focusing on order allocation and available-to-promise models. I specialize in transforming business challenges into data-driven solutions and drive improvements through algorithm design, product development, and code reviews. Prior to Target, I managed a data science team at WNS Global Services, delivering machine learning and analytics solutions for finance and auditing functions. I have extensive experience in Python, PySpark, R programming, machine learning, software engineering, and data pipelines, with a proven track record of optimizing workflows and enhancing operational efficiency. I hold a Ph.D. in Finance and Accounting and have presented my work at international conferences.
+Lead Data Scientist at Target Corporation, driving digital supply chain simulations for last-mile operations with a focus on order allocation and available-to-promise models. I excel at transforming complex business challenges into well-defined data models, leading a team through brainstorming, experimentation, and algorithm design to develop impactful solutions. Before Target, I led a data science team at WNS Global Services, delivering advanced machine learning and analytics solutions for finance and auditing. With deep expertise in Python, PySpark, R, SQL, machine learning, software engineering, and data pipeline design, I have a proven track record of optimizing workflows and enhancing operational efficiency. I hold a Ph.D. in Finance and Accounting, along with a master’s in Engineering, and have presented my research at several international conferences.
 
 \end{blockquote}
 \endgroup
@@ -107,29 +107,7 @@ I am a Lead Data Scientist at Target Corporation, where I lead a team of data sc
 
 
 
-# Industry, Research, and Teaching Experience
-
-<!-- \nopagebreak -->
-<!--     \cventry{2022--}{Lead Data Scientist}{Target Corporation, Bangalore}{ -->
-<!--     Building supply chain simulation, available to promise, order allocation, big-data pipelines; -->
-<!--     Leading product fixes, features, release, and code-review; -->
-<!--     Demo/present our capability and resolve user queries}{}{\empty} -->
-<!--     \cventry{2022--2022}{Sr. Group Manager (Data Science)}{WNS Global Services, Bangalore}{ -->
-<!--     Building F\&A apps in payments, collections, reporting, prediction, and auditing; -->
-<!--     Maintain codebase (github), APIs, deployment automation; -->
-<!--     Conduct Knowledge-sharing Sessions}{}{\empty} -->
-<!--     \cventry{2016--2022}{Research Scholar}{Indian Institute of Management, Bangalore}{ -->
-<!--     Ideating research problem; -->
-<!--     Identify data sources, collect/clean/transform data, model building (regression/ML/NLP); -->
-<!--     Drafting research papers and presenting in conferences}{}{\href{https://github.com/nik141088/phd-thesis-rmarkdown}{click}} -->
-<!--     \cventry{2018--2022}{Primary Instructor}{Programming and Data Analysis}{ -->
-<!--     Took multiple short/long courses on R programming, data analysis, and LaTeX; -->
-<!--     Instructor Rating: 4.7/5}{}{\href{https://github.com/nik141088/applied-R}{click}} -->
-<!--     \cventry{2012--2016}{Sr. Software Engineer}{Cisco Systems, Bangalore}{ -->
-<!--     Design, implement, test, review, and documentation of 4G-LTE and WiFi systems; -->
-<!--     High Availability/Redundancy architecture; -->
-<!--     Network security}{}{\empty} -->
-
+# Industry and Research Experience
 
 ```{r, eval=TRUE}
 library(tibble)
@@ -194,7 +172,7 @@ and configurations to analyze various supply chain scenarios and assessing their
   "Developed an Available-to-Promise (ATP) simulator from scratch, involving deep product/engineering discussions, algorithm design, interface design, data pipeline construction, automated deployment, and documentation. Conducted thorough testing and validation against actuals. Discovered early use cases impacting 3% of digital orders. Use cases span engineering, fulfillment optimization, and demand forecast teams",
 
   "Target", "Logging Infra",
-  "Engineered a post-mortem analysis tool to parallelize sequential tasks for quick output evaluation. Implemented detailed logging for granular scrutiny of allocation decisions. Used for multiple RCAs within team",
+  "Engineered a post-mortem analysis tool to massively parallelize sequential tasks for quick output evaluation. Implemented detailed logging for granular scrutiny of allocation decisions. Used for multiple RCAs within team",
 
   "WNS", "QA Analytics",
   "Highly configurable workflow tool designed to catch human errors in invoice indexing. Provides a one-stop solution for outlier and anomalous transaction detection. Single tool deployed for five different audit teams within WNS",
@@ -413,7 +391,6 @@ Price-to-Earnings Ratio}}. \underline{SSRN:} \url{https://papers.ssrn.com/sol3/p
 
 
 \endgroup
-
 
 
 
