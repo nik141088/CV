@@ -84,7 +84,7 @@ yaml = yaml::yaml.load(temp);
 \begingroup
 \begin{blockquote}
 
-Lead Data Scientist at Target Corporation, driving digital supply chain simulations for last-mile operations with a focus on order allocation and available-to-promise models. I excel at transforming complex business challenges into well-defined data models, leading a team through brainstorming, experimentation, and algorithm design to develop impactful solutions. Before Target, I led a data science team at WNS Global Services, delivering advanced machine learning and analytics solutions for finance and auditing. With deep expertise in Python, PySpark, R, SQL, machine learning, software engineering, and data pipeline design, I have a proven track record of optimizing workflows and enhancing operational efficiency. I hold a Ph.D. in Finance and Accounting, along with a master’s in Engineering, and have presented my research at several international conferences.
+I am lead Data Scientist at Target Corporation, driving digital supply chain simulations for last-mile operations with a focus on order allocation and available-to-promise models. I excel at transforming complex business challenges into well-defined data models, leading a team through brainstorming, experimentation, and algorithm design to develop impactful solutions. Before Target, I led a data science team at WNS Global Services, delivering advanced machine learning and analytics solutions for finance and auditing functions. With deep expertise in Python, PySpark, R, SQL, machine learning, software engineering, and data pipeline design, I have a proven track record of optimizing workflows and enhancing operational efficiency. I hold a Ph.D. in Finance and Accounting, along with a master's in Engineering, and have presented my research at several international conferences.
 
 \end{blockquote}
 \endgroup
@@ -118,7 +118,8 @@ tribble(
   "Building end to end simulations for last mile operations: order allocation, available to promise, big-data pipelines;
   Understanding and decodifying ambiguous business problems into well-defined data relations and algorithms, highlighting gaps in understanding, and discovering potential impact;
   Leading product enhancements, releases, fixes, and code-reviews;
-  Engage cross-functional teams in designing experiments and presenting our capabilities in deep-dives and floor-walks. Managing user queries and feedback",
+  Engage cross-functional teams in designing experiments and presenting our capabilities in deep-dives and floor-walks;
+  Mentoring senior data scientists, and managing user queries and feedback",
 
   "Sr. Group Manager (Data Science)", "2022--2022", "WNS Global Services, Bangalore",
   "Building F&A analytics/ML apps for payments, collections, reporting, prediction, and auditing functions; 
@@ -169,7 +170,7 @@ tribble(
 and configurations to analyze various supply chain scenarios and assessing their impacts. Created a framework for accuracy measurement. Optimized flow and data interactions to improve run-time by 30%",
   
   "Target", "Promise Simulator",
-  "Developed an Available-to-Promise (ATP) simulator from scratch, involving deep product/engineering discussions, algorithm design, interface design, data pipeline construction, automated deployment, and documentation. Conducted thorough testing and validation against actuals. Discovered early use cases impacting 3% of digital orders. Use cases span engineering, fulfillment optimization, and demand forecast teams",
+  "Developed an Available-to-Promise (ATP) simulator from scratch, involving deep product/engineering discussions, algorithm design, interface design, data pipeline construction, automated deployment, and documentation. Conducted thorough testing and validation against actuals. Discovered early use cases impacting 3% of digital orders. Use cases span engineering, fulfillment optimization, and network planning teams",
 
   "Target", "Logging Infra",
   "Engineered a post-mortem analysis tool to massively parallelize sequential tasks for quick output evaluation. Implemented detailed logging for granular scrutiny of allocation decisions. Used for multiple RCAs within team",
@@ -220,7 +221,7 @@ tribble(
   
   "Programming",
   "Advanced", 
-  "Python, pyspark, hive, R, Shiny, C",
+  "Python, pyspark, hive, R, Shiny, C/C++, Kotlin/Java (basics)",
   
   "Machine Learning",
   "Advanced", 
@@ -246,9 +247,9 @@ tribble(
   "Expert", 
   "Last Mile Operations Research: available to promise and order allocation, Finance, Accounting, Statistics, Regression Analysis",
   
-  "Leadership",
+  "Leadership/Interpersonal",
   "Progressive", 
-  "Mentoring, product leadership, project management"
+  "Mentoring, project scoping/planning/managing, stakeholder management, product leadership, team building, hiring/interviewing"
   
 ) %>% 
   detailed_entries(what = skill, when = level, with = details)
