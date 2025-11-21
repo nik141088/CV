@@ -6,7 +6,7 @@ surname: Vidhani
 position: "Lead Data Scientist, Target Corporation"
 profilepic: nikhil-wns-pic.jpg
 
-phone: "+91-797-555-7296"
+phone: "+91-99-45-67-37-57"
 linkedin: "nikhil-vidhani"
 email: nikhil141088@gmail.com
 # www: sites.google.com/view/nikhilvidhani
