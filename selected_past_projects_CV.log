@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.4)  21 NOV 2025 22:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.4)  21 NOV 2025 21:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**CV_Nikhil_Vidhani_2025_Dec.tex
-(./CV_Nikhil_Vidhani_2025_Dec.tex
+**selected_past_projects_CV.tex
+(./selected_past_projects_CV.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-10-09>
 (./moderncv.cls
@@ -368,8 +368,8 @@ Package hyperref Info: Option `bookmarksopen' set `true' on input line 32.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 32.
  (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./CV_Nikhil_Vidhani_2025_Dec.aux)
-\openout1 = `CV_Nikhil_Vidhani_2025_Dec.aux'.
+) (./selected_past_projects_CV.aux)
+\openout1 = `selected_past_projects_CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -449,115 +449,102 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 32.
-(./CV_Nikhil_Vidhani_2025_Dec.out) (./CV_Nikhil_Vidhani_2025_Dec.out)
+(./selected_past_projects_CV.out) (./selected_past_projects_CV.out)
 \@outlinefile=\write4
-\openout4 = `CV_Nikhil_Vidhani_2025_Dec.out'.
+\openout4 = `selected_past_projects_CV.out'.
 
-\pagenumberwidth=\skip100
 \makecvheadpicturebox=\box61
-<nikhil-wns-pic.jpg, id=33, 1351.0475pt x 1522.68875pt>
+<nikhil-wns-pic.jpg, id=8, 1351.0475pt x 1522.68875pt>
 File: nikhil-wns-pic.jpg Graphic file (type jpg)
 <use nikhil-wns-pic.jpg>
 Package pdftex.def Info: nikhil-wns-pic.jpg  used on input line 33.
 (pdftex.def)             Requested size: 70.0pt x 78.88054pt.
-\makecvheadpicturewidth=\skip101
+\makecvheadpicturewidth=\skip100
 \makecvheadnamebox=\box62
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--33
 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 50.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 51.
 (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 50.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 51.
  (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 50.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 51.
  (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 50.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 51.
  (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 50.
+(Font)              <10.95> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 50.
+(Font)              <8> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 50.
-LaTeX Font Info:    Trying to load font information for T1+DejaVuSansMono-TLF on input line 102.
+(Font)              <6> on input line 51.
+LaTeX Font Info:    Trying to load font information for T1+DejaVuSansMono-TLF on input line 81.
  (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/dejavu/T1DejaVuSansMono-TLF.fd
 File: T1DejaVuSansMono-TLF.fd 2011/06/01 Font definitions for T1/DejaVuSansMono-TLF.
 )
 LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/n' will be
-(Font)              scaled to size 8.6pt on input line 102.
+(Font)              scaled to size 8.6pt on input line 81.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `DejaVuSansMono-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 102.
+(Font)              <10> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 102.
+(Font)              <7> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 102.
+(Font)              <5> on input line 81.
 
 
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 109.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 104.
 (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 109.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 104.
  (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 109.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 104.
  (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
 LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/DejaVuSansMono-TLF/m/it' tried instead on input line 109.
+(Font)              Font shape `T1/DejaVuSansMono-TLF/m/it' tried instead on input line 104.
 LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/it' will be
-(Font)              scaled to size 9.41699pt on input line 109.
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 109.
+(Font)              scaled to size 9.41699pt on input line 104.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 104.
  (/Users/Z00BV4R/Library/TinyTeX/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 109.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 104.
  [1
 
-{/Users/Z00BV4R/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc} <./nikhil-wns-pic.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
-\T1/lmr/m/n/10 (+20) Here is a se-lected list of my projects that I am not ac-tively work-ing on.
- []
-
-
-
-[2]
-LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/n' will be
-(Font)              scaled to size 9.41699pt on input line 213.
-
-
-[3] (./CV_Nikhil_Vidhani_2025_Dec.aux)
+{/Users/Z00BV4R/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc} <./nikhil-wns-pic.jpg>] (./selected_past_projects_CV.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-10-09>
  ***********
-Package rerunfilecheck Info: File `CV_Nikhil_Vidhani_2025_Dec.out' has not changed.
-(rerunfilecheck)             Checksum: D3AC7A7407F029E857F78E76E7BC3377;1067.
+Package rerunfilecheck Info: File `selected_past_projects_CV.out' has not changed.
+(rerunfilecheck)             Checksum: 4DD94866626F75C3CBD137A99A78D79F;159.
  ) 
 Here is how much of TeX's memory you used:
- 15905 strings out of 475342
- 280915 string characters out of 5769529
- 702215 words of memory out of 5000000
- 38350 multiletter control sequences out of 15000+600000
- 626195 words of font info for 145 fonts, out of 8000000 for 9000
+ 15826 strings out of 475342
+ 279838 string characters out of 5769529
+ 701070 words of memory out of 5000000
+ 38336 multiletter control sequences out of 15000+600000
+ 623324 words of font info for 118 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 79i,13n,93p,1023b,590s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,13n,93p,1022b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono-Oblique.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro10.pfb></Users/Z00BV4R/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmro17.pfb>
-Output written on CV_Nikhil_Vidhani_2025_Dec.pdf (3 pages, 565386 bytes).
+Output written on selected_past_projects_CV.pdf (1 page, 541768 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 38462 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
+ 37902 words of extra memory for PDF output out of 42996 (max. 10000000)
 
