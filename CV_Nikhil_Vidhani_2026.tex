@@ -1,0 +1,211 @@
+\documentclass[11pt,a4paper,]{moderncv}
+\moderncvstyle{casual} % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{A52A2A}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+\usepackage{ragged2e}
+\usepackage{comment}
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{1A4D8F} % Muted dark blue, adjust as needed
+\usepackage[colorlinks=true, urlcolor=linkblue, linkcolor=black]{hyperref}
+
+\providecommand{\tightlist}{
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+% adjust the page margins
+\usepackage[a4paper,scale=0.75,footskip=60pt,bottom=1in,left=0.75in,right=0.75in,top=1in]{geometry}
+\setlength{\hintscolumnwidth}{2cm} % if you want to change the width of the column with the dates
+
+% personal data
+\name{Nikhil}{Vidhani}
+\title{\Large Lead Data Scientist -- Digital Fulfilment \& Simulations, Target Corporation}
+\phone[mobile]{+91-994-567-3757}
+\email{\donothing{\href{mailto:nikhil141088@gmail.com}{\nolinkurl{nikhil141088@gmail.com}}}}
+\social[linkedin]{nikhil-vidhani}
+\social[github]{nik141088}
+% \photo[70pt][0.4pt]{nikhil-wns-pic.jpg} % commented out for cleaner, less-biased CV
+
+% main content
+\begin{document}
+\makecvtitle
+
+\newenvironment{smallblockquote}{
+  \par
+  \medskip
+  \leftskip=2em\rightskip=0em
+  \noindent\ignorespaces
+  }{\par\medskip}
+
+\newenvironment{blockquote}{
+  \par
+  \medskip
+  \leftskip=4em\rightskip=0em
+  \noindent\ignorespaces
+  }{\par\medskip}
+
+\hypertarget{executive-summary}{
+\section{Executive Summary}\label{executive-summary}}
+
+\begingroup
+  \par
+  \medskip
+  \leftskip=4em\rightskip=0em
+  \noindent\ignorespaces
+
+\begin{itemize}
+    \item Architected end-to-end simulation capabilities for order allocation and available-to-promise (ATP) systems impacting 3\% of all digital sales (\$600+Mn).
+    \item Ideated, designed and implemented a new consolidation algorithm for ATP projected to save \$20Mn+ in shipping costs and drive \$300Mn+ in incremental sales.
+    \item Built unified simulation and ATP tools that are now the primary platform for scenario testing, sensitivity analysis, and policy design across Target's digital fulfilment network.
+    \item Deep technical expertise in Python and R with extensive experience in distributed data pipelines (Spark, Kafka, Hive/Hadoop/SQL) algorithm design, machine learning, software engineering, and data pipeline development.
+    \item Cross-functional leader partnering with product, engineering, and operations to translate ambiguous business problems into experiment-ready use cases, mentoring a 6-member data science team and driving an experimentation culture.
+    \item Prior experience leading a data science team at WNS on finance and auditing analytics, and a strong research foundation with a Ph.D. in Finance (IIM Bangalore) and Master's in Engineering (IISc Bangalore) with work presented at multiple conferences.
+\end{itemize}
+
+  \par\medskip
+\endgroup
+
+\hypertarget{industry-and-research-experience}{
+\section{Industry and Research
+Experience}\label{industry-and-research-experience}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright Nov~2022 -- \newline Present}}
+    {Lead Data Scientist}{Target Corporation, Bangalore}{}{Team Size: 5}{
+    \begin{itemize}
+        \item Own design and expansion of end-to-end last-mile simulation platforms (digital twin) for order allocation and available-to-promise, enabling network-wide what-if analysis on inventory, capacity, and promise policies.
+        \item Develop and manage advanced cost-versus-speed optimisation models for consolidation and promise speed generation, using large-scale simulations and production data to identify trade-offs and drive multi-million-dollar improvements in ship cost and digital sales.
+        \item Lead product and technical roadmap for multiple simulation tools, including requirements prioritisation, code and design reviews, release planning, and operational support.
+        \item Partner with supply chain, fulfilment, and digital product teams to scope high-impact questions, run scenario and sensitivity analyses, and recommend data-driven policy changes for speed, cost, and conversion.
+        \item Collaborate closely with engineering to productionise next-generation promise logic and data pipelines (Kafka-based ingestion, PySpark/Hive transforms), providing design docs, test plans, and knowledge-transfer sessions.
+        \item Manage and mentor a team of five senior and junior data scientists through 1:1s, design discussions, and sprint ceremonies, coaching them on experimentation, stakeholder communication, and engineering best practices.
+    \end{itemize}
+    }
+    \cventry{\parbox[t]{2cm}{\raggedright Feb~2022 -- \newline Nov~2022}}
+    {Sr. Group Manager (Data Science)}{WNS Global Services, Bangalore}{}{Team Size: 6}{
+    \begin{itemize}
+        \item Led a 6-member data science team delivering analytics and machine-learning solutions for finance and accounting use cases (payments, collections, reporting, prediction, and auditing) for global clients, driving multi-million-dollar operational savings.
+        \item Owned end-to-end lifecycle from problem framing with business stakeholders through data engineering, modelling, API development, and automated deployment, ensuring solutions were reliable and maintainable.
+        \item Maintained shared GitHub repositories, code quality standards, and CI/CD workflows; mentored junior team members through code reviews, technical sessions, and structured knowledge-sharing.
+    \end{itemize}
+    }
+    \cventry{\parbox[t]{2cm}{\raggedright Jun~2016 -- \newline Jan~2022}}
+    {Research Scholar}{Indian Institute of Management, Bangalore}{}{IC}{
+    \begin{itemize}
+        \item Extensively researched asset pricing anomalies, examined impact of disagreement on trading volume, analyst forecasts, and 10K document characteristics
+        \item Undertook comprehensive data collection, cleaning, modelling, and statistical analysis
+        \item Published multiple papers and presented in several conferences. \textit{Complete list available at:} 
+\href{https://github.com/nik141088/CV/blob/main/publications_CV.pdf}{\texttt{publications\_CV.pdf}}
+    \end{itemize}
+    }
+    \cventry{\parbox[t]{2cm}{\raggedright Jun~2018 -- \newline Jan~2022}}
+    {Primary Instructor}{Programming and Data Analysis}{}{Batch Size: 5-40}{
+    \begin{itemize}
+        \item Took multiple short/long courses on R programming, data analysis, and LaTeX
+        \item Instructor Rating: 4.7/5 (\href{https://github.com/nik141088/applied-R}{https://github.com/nik141088/applied-R})
+    \end{itemize}
+    }
+    \cventry{\parbox[t]{2cm}{\raggedright Jul~2012 -- \newline May~2016}}
+    {Software Engineer}{Cisco Systems, Bangalore}{}{IC}{
+    \begin{itemize}
+        \item Design, implement, test, review, and documentation of 4G-LTE and WiFi systems
+        \item High Availability/Redundancy architecture. Network security.
+    \end{itemize}
+    }
+
+% \pagebreak
+
+\hypertarget{major-projects}{
+\section{Major Projects}\label{major-projects}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright 2025 -- \newline Present}}
+    {Consolidation Algorithm Revamp}{Target}{}{}{
+    \begin{itemize}
+        \item Redesigned Target's consolidation algorithm to jointly optimise customer promise speed and shipping cost across the last-mile network, replacing legacy heuristics with a principled modelling framework.
+        \item Used integrated simulations (Promise/GOA) as a digital twin to evaluate policy alternatives under realistic order, inventory, and capacity patterns, including scenario and sensitivity analysis.
+        \item Quantified projected impact of \$20M+ lower ship costs and \$300M+ incremental digital sales through improved conversion and margin.
+        \item Implemented, tested, and tuned the algorithm under strict latency and reliability constraints for the P0 promise module.
+        \item Influenced product, engineering, and fulfilment stakeholders via clear decision documents, presentations, and knowledge-transfer sessions to secure buy-in and plan roll-out.
+    \end{itemize}
+    }
+    
+    \cventry{\parbox[t]{2cm}{\raggedright 2023 -- \newline Present}}
+    {Simulations Capability}{Target}{}{}{
+      \begin{itemize}
+        \item Led a 5-member team to design, implement, and maintain a unified simulation platform that acts as a digital twin for last-mile promise and fulfilment systems, now used by 100+ stakeholders across planning, digital fulfilment, and operations.
+        \item Integrated Promise and GOA simulators into a single workflow enabling joint optimisation of delivery speed, node selection, and shipping cost for end-to-end scenarios.
+        \item Transitioned data ingestion from static files to Kafka-based pipelines and scalable PySpark/Hive processing, improving data freshness and reducing manual intervention.
+        \item Implemented robustness features such as input validation, scenario templates, and automated reporting, reducing user debug and support time by roughly 50\%.
+        \item Owned roadmap and release management (three major and eight minor releases in 2025), including automated accuracy measurement and reporting frameworks.
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2024 -- \newline Present}}
+    {Promise Simulator}{Target}{}{}{
+    \begin{itemize}
+        \item Developed an ATP simulator from scratch, covering algorithm design, data model, product discussions, interface design, and deployment automation.
+        \item Ran large-scale backtests against production behaviour to validate the simulator and iteratively improve accuracy from about 40\% to 85\%, building trust with partner teams.
+        \item Identified and delivered early use cases influencing roughly 3\% of all Target digital orders (\$600M+), including what-if analysis of promise policies and supply-chain strategies.
+        \item Actively leveraged by fulfilment optimisation, engineering, and supply chain planning teams as the core platform for testing new promise and fulfilment logic before production rollout.
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2021 -- \newline 2024}}
+    {Past Projects}{Target, WNS, IIMB, and Personal}{}{}{
+    \noindent \textit{A list of selected past projects:}
+    \href{https://github.com/nik141088/CV/blob/main/selected_past_projects_CV.pdf}{\texttt{selected\_past\_projects\_CV.pdf}}
+    }
+
+
+% \pagebreak
+
+
+\hypertarget{tools-and-skills}{
+\section{Tools and Skills}\label{tools-and-skills}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}{Programming \& Big Data}{Python, R, PySpark, Hive/SQL, Shiny/streamlit, C/C++, Kotlin/Java (basics)}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}{Analytics \& Modelling}{Regression and classification, experiment design/A/B testing, NLP, feature engineering, MLOps (basics), h2o, TensorFlow/Keras}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}{Design Principles}{Data structures and algorithms, computational/space complexity, vectorisation, functional programming, test-driven development, modular development, secure coding practices}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}{Solutioning}{Problem solving, product thinking, scoping ambiguous problems, charting solutions, impact discovery, strategic thinking}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}{Engineering \& Platforms}{APIs and services (plumber/fastapi), debugging, web scraping (selenium), Linux, code review, Git/GitHub, relational databases, Hadoop/Hive, Kafka, AWS, CI/CD}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}{Visualisation \& Storytelling}{ggplot, plotly, R Markdown, Streamlit, dashboarding, LaTeX, MS Office; building clear narratives for technical and non-technical audiences}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright Expert}}{Domain Knowledge}{Last-mile operations research (available-to-promise and order allocation), digital fulfilment and shipping cost optimisation, Finance, Accounting, Statistics, Regression analysis}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright Progressive}}{Leadership}{Mentoring and coaching, project scoping/planning/managing, stakeholder management, product leadership, team building, hiring/interviewing}{}{}{}
+
+
+
+\hypertarget{education}{
+\section{Education}\label{education}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright 2016 -- \newline 2021}}
+    {Doctor of Philosophy}{Finance and Accounting}{Indian Institute of Management, Bangalore}{}{CGPA: 3.64 / 4.00}
+    \cventry{\parbox[t]{2cm}{\raggedright 2010 -- \newline 2012}}
+    {Master of Engineering}{Electrical Communication Engineering}{Indian Institute of Science, Bangalore}{}{CGPA: 6.4 / 8.0; Project Grade: A}
+    \cventry{\parbox[t]{2cm}{\raggedright 2006 -- \newline 2010}}
+    {Bachelor of Technology}{Electronics and Communication Engg.}{Bundelkhand Institute of Engg. and Tech., Jhansi (U.P.)}{}{Grade: 73.6\%}
+    \cventry{\parbox[t]{2cm}{\raggedright 2004 -- \newline 2006}}
+    {Schooling (12th Standard)}{Science}{C.B.S.E.}{}{Grade: 88.2\%}
+
+\hypertarget{awards-and-honors}{
+\section{Awards and Honors}\label{awards-and-honors}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright 2022}}{Tech Genius, Transforming the Organization, Victory Fleet}{WNS Global Services}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright 2020}}{Mirae Asset Scholarship (PhD Year 5)}{Indian Institute of Management}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright 2017--2018}}{Director's Merit List (PhD Year 1 and 2)}{Indian Institute of Management}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright 2016}}{96.5 percentile}{Common Aptitude Test (CAT)}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright 2010}}{AIR 20/105,000}{Graduate Aptitude Test in Engineering (GATE)}{}{}{}
+    \cventry{\parbox[t]{2cm}{\raggedright 2006--2007}}{Merit Scholarships}{Intermediate Examination and Engineering}{}{}{}
+
+
+
+\end{document}
+
