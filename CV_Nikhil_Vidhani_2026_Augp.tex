@@ -1,0 +1,269 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{casual} % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{A52A2A}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+\usepackage{ragged2e}
+\usepackage{comment}
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{1A4D8F} % Muted dark blue, adjust as needed
+% \usepackage[colorlinks=true, urlcolor=linkblue, linkcolor=black]{hyperref}
+
+\providecommand{\tightlist}{
+    \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+% adjust the page margins
+\usepackage[a4paper,scale=0.75,footskip=60pt,bottom=1in,left=0.75in,right=0.75in,top=1in]{geometry}
+\setlength{\hintscolumnwidth}{2cm} % if you want to change the width of the column with the dates
+
+% personal data
+\name{Nikhil}{Vidhani}
+\title{\Large Lead Data Scientist -- Simulation, Optimisation \& Agentic AI}
+\phone[mobile]{+91-994-567-3757}
+\email{\donothing{\href{mailto:nikhil141088@gmail.com}{\nolinkurl{nikhil141088@gmail.com}}}}
+\social[linkedin]{nikhil-vidhani}
+\social[github]{nik141088}
+% \photo[70pt][0.4pt]{nikhil-wns-pic.jpg} % commented out for a cleaner, less-biased CV
+
+% main content
+\begin{document}
+\makecvtitle
+
+\newenvironment{smallblockquote}{
+  \par
+  \medskip
+  \leftskip=2em\rightskip=0em
+  \noindent\ignorespaces
+  }{\par\medskip}
+
+\newenvironment{blockquote}{
+  \par
+  \medskip
+  \leftskip=4em\rightskip=0em
+  \noindent\ignorespaces
+  }{\par\medskip}
+
+\hypertarget{executive-summary}{
+\section{Executive Summary}\label{executive-summary}}
+
+\begingroup
+  \par
+  \medskip
+  \leftskip=4em\rightskip=0em
+  \noindent\ignorespaces
+
+\begin{itemize}
+    \item Architected and now lead the technical evolution of Nemo, Target's end-to-end simulation platform for order allocation and available-to-promise, used as the primary testbed for network policy design, with decisions potentially affecting up to \$8B in digital sales.
+    \item Architected and deployed Nemo AI, a production multi-agent research and diagnosis system, while introducing reusable Model Context Protocol (MCP)-based capabilities and AI-engineering practices for evaluation, traceability, observability, and responsible adoption.
+    \item Conceived and led the redesign of Target's legacy consolidation algorithm, translating customer-speed and shipping-cost trade-offs into a principled optimisation framework now in A/B-test preparation, with projected benefits of \$20M+ in shipping-cost savings and \$300M+ in incremental sales.
+    \item Deep technical expertise in Python and R, distributed processing (PySpark, Kafka, Hive/Hadoop, and SQL), simulation, operations research, algorithm design, machine learning, and production software engineering, supported by a Ph.D. in Finance from IIM Bangalore and a master's degree in engineering from IISc Bangalore.
+    \item Recognised as a go-to simulation and fulfilment expert, influencing product, engineering, operations, and data-science decisions while mentoring a five-person team through architecture, experimentation, code and design reviews, and technical communication; previously led a five-member analytics team at WNS.
+\end{itemize}
+
+  \par\medskip
+\endgroup
+
+\hypertarget{industry-and-research-experience}{
+\section{Industry and Research
+Experience}\label{industry-and-research-experience}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright Nov~2022 -- \newline Present}}
+    {Lead Data Scientist}{Target Corporation, Bangalore}{}{Team Size: 5}{
+    \begin{itemize}
+        \item Own the technical strategy, architecture, and expansion of end-to-end simulation capabilities for order allocation and available-to-promise, setting direction across algorithms, data systems, validation, interfaces, and production operations.
+        \item Lead complex simulation and optimisation work on consolidation, promise speed, capacity, and fulfilment policy, converting ambiguous business questions into objective functions, scenarios, sensitivity analyses, and controlled experiments.
+        \item Establish platform-quality mechanisms including large-scale backtesting, automated accuracy measurement, common data and date engines, checkpoint recovery, self-service validation, and release controls to improve fidelity, reliability, and developer productivity.
+        \item Serve as \textit{AI Champion} for the Digital Fulfilment data-science organisation---architecting production agentic-AI systems and reusable MCP/skill capabilities, and setting practices for specification-driven development, testing, prompt versioning, observability, and evaluation.
+        \item Partner with product, engineering, supply-chain, and fulfilment leaders as a go-to technical expert; shape roadmaps and launch decisions while mentoring data scientists on architecture, experimentation, debugging, and stakeholder communication.
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright Feb~2022 -- \newline Nov~2022}}
+    {Sr. Group Manager (Data Science)}{WNS Global Services, Bangalore}{}{Team Size: 5}{
+    \begin{itemize}
+        \item Led a five-member data-science team delivering analytics and machine-learning solutions for finance and accounting use cases (payments, collections, reporting, prediction, and auditing) for global clients, driving multi-million-dollar operational savings.
+        \item Owned end-to-end technical delivery, from problem framing with business stakeholders through data engineering, modelling, API development, and automated deployment, ensuring reliable and maintainable solutions.
+        \item Established shared GitHub repositories, code-quality standards, and CI/CD workflows; raised team capability through code reviews, technical sessions, and structured knowledge-sharing.
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright Jun~2016 -- \newline Jan~2022}}
+    {Research Scholar}{Indian Institute of Management, Bangalore}{}{IC}{
+    \begin{itemize}
+        \item Researched asset-pricing anomalies and examined the impact of disagreement on trading volume, analyst forecasts, and 10-K document characteristics.
+        \item Conducted comprehensive data collection, cleaning, modelling, and statistical analysis.
+        \item Published multiple papers and presented findings at several conferences. \textit{Complete list available at:}
+\href{https://github.com/nik141088/CV/blob/main/publications_CV.pdf}{\texttt{publications\_CV.pdf}}
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright Jun~2018 -- \newline Jan~2022}}
+    {Primary Instructor}{Programming and Data Analysis}{}{Batch Size: 5--40}{
+    \begin{itemize}
+        \item Designed and taught multiple short- and long-format courses in R programming, data analysis, and LaTeX.
+        \item Instructor rating: 4.7/5 (\href{https://github.com/nik141088/applied-R}{https://github.com/nik141088/applied-R}).
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright Jul~2012 -- \newline May~2016}}
+    {Software Engineer}{Cisco Systems, Bangalore}{}{IC}{
+    \begin{itemize}
+        \item Designed, implemented, tested, reviewed, and documented software for 4G-LTE and Wi-Fi systems.
+        \item Contributed to high-availability, redundancy, and network-security architecture.
+    \end{itemize}
+    }
+
+% \pagebreak
+
+\hypertarget{major-projects}{
+\section{Major Projects}\label{major-projects}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright 2026 -- \newline Present}}
+    {Nemo AI \& Generative AI Enablement}{Target}{}{}{
+    \begin{itemize}
+        \item Conceived, architected, built, and deployed \textbf{Nemo AI}, an internally hosted multi-agent orchestrator/executor/synthesiser that performs deep research on simulation runs, answers conceptual questions, and analyses inputs and outputs to accelerate root-cause diagnosis.
+        \item Engineered production-grade capabilities across local, development, and production environments, including authentication, per-request cost and latency tracking, persisted history, and full traces for debugging, observability, governance, and evaluation.
+        \item Designed a specification-driven ``LLM Wiki'' approach---an alternative to retrieval-augmented generation (RAG) for medium-sized knowledge bases---with hierarchical curation and immutable citations back to source documents to improve traceability and reduce hallucinations.
+        \item Built a Model Context Protocol (MCP) service over core diagnostic systems and reusable skills and agents for simulation root-cause analysis, code review, and PR generation, reducing repetitive manual analysis and enabling reuse beyond a single application.
+        \item Led weekly AI-engineering forums and share-outs, translating emerging practices into standards for specifications, testing, prompt versioning, golden-set evaluation, observability, and human ownership of AI-generated code.
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2025 -- \newline Present}}
+    {Consolidation Algorithm Revamp}{Target}{}{}{
+    \begin{itemize}
+        \item Conceived and redesigned Target's consolidation algorithm to jointly optimise customer promise speed and shipping cost across the last-mile network, replacing legacy heuristics with a principled modelling framework.
+        \item Formulated the cost-versus-speed objective and used Nemo's integrated promise and order-allocation simulations for scenario and sensitivity analysis across realistic order, inventory, capacity, and No-Rush conditions.
+        \item Led rigorous validation across data-science and engineering implementations, increasing functional agreement from 20\% to 95\% and identifying defects in both; progressed to mirror testing and designed a controlled A/B test across 10 ZIP codes, with speed, cost, and No-Rush offer rate as core metrics.
+        \item Quantified projected benefits of \$20M+ in shipping-cost savings and \$300M+ in incremental digital sales through improved conversion and margin.
+        \item Implemented, profiled, tested, and tuned the algorithm for a latency-critical promise service, balancing model quality with strict performance and reliability constraints.
+        \item Served as the technical bridge across product, engineering, and fulfilment through decision documents, design reviews, curated test cases, presentations, and knowledge transfer, enabling phased rollout planning.
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2023 -- \newline Present}}
+    {Nemo: Unified Simulation Platform}{Target}{}{}{
+    \begin{itemize}
+        \item Architected and led a five-member team in building and operating Nemo, a unified simulation platform for last-mile promise and fulfilment, supporting more than 100 stakeholders across planning, digital fulfilment, and operations.
+        \item Developed an available-to-promise (ATP) simulator from scratch---spanning algorithm design, data modelling, interfaces, and deployment automation---and integrated it with the guest order allocation (GOA) simulator to evaluate end-to-end speed, node selection, capacity, and shipping-cost trade-offs.
+        \item Established large-scale backtesting and automated accuracy pipelines, improving ATP accuracy from about 40\% to 85\%; later diagnosed a systemic time-zone defect that raised before/after-cutoff agreement from 39\% to 88\%.
+        \item Modernised the platform with Kafka-based ingestion, scalable PySpark/Hive processing, common data and date engines, input validation, checkpoint recovery, and automated reporting; improved runtime by 40\% through exhaustive profiling and optimisation.
+        \item Delivered simulation studies informing decisions affecting roughly 3\% of Target's digital orders (\$600M+), including an evaluation that identified up to \$5M in potential shipping-cost savings for an estimated 0.03-day increase in delivery time.
+        \item Owned the technical roadmap across five major and 12 minor releases in 2025--2026, spanning accuracy, replay, self-service, interfaces, and future cloud/agentic architecture; presented ``Scaling Nemo: Experiences and Challenges'' at an organisation-wide Simulations Conference.
+    \end{itemize}
+    }
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2021 -- \newline 2024}}
+    {Past Projects}{Target, WNS, IIMB, and Personal}{}{}{
+    \noindent \textit{A list of selected past projects:}
+    \href{https://github.com/nik141088/CV/blob/main/selected_past_projects_CV.pdf}{\texttt{selected\_past\_projects\_CV.pdf}}
+    }
+
+% \pagebreak
+
+\hypertarget{tools-and-skills}{
+\section{Tools and Skills}\label{tools-and-skills}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright Expert}}
+    {Programming \& Data Engineering}
+    {Python, R, PySpark, SQL, Kafka, Hive/Hadoop, distributed data pipelines, data modelling, Shiny/Streamlit, C/C++}
+    {}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}
+    {Analytics \& Modelling}
+    {Simulation, operations research, local-search and heuristic optimisation, experiment design, A/B testing, regression and classification, NLP, feature engineering, TensorFlow/Keras}
+    {}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}
+    {Generative AI \& Agentic AI}
+    {Multi-agent orchestration, tool calling, Model Context Protocol (MCP), LLM application architecture, prompt/skill/agent engineering, evaluation, traceability, governance, observability, specification-driven development}
+    {}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright Expert}}
+    {Design Principles}
+    {System and algorithm design, data structures, time and space complexity, performance profiling, vectorisation, functional programming, test-driven and modular development, secure coding}
+    {}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}
+    {Engineering \& Platforms}
+    {APIs and services (Plumber/FastAPI), distributed processing, authentication, observability, debugging, Linux, code review, Git/GitHub, relational databases, AWS, cloud-migration planning, CI/CD}
+    {}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}
+    {Visualisation \& Storytelling}
+    {Decision documents, technical presentations, ggplot2, Plotly, R Markdown, dashboarding, LaTeX, Confluence/Jira}
+    {}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright Expert}}
+    {Domain Knowledge}
+    {Last-mile operations research (available-to-promise and order allocation), digital fulfilment, promise-speed and shipping-cost optimisation, finance, accounting, and statistics}
+    {}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}
+    {Product \& Strategy}
+    {Technical strategy, architecture and roadmap design, ambiguous problem framing, scenario design, impact sizing, product thinking, and cross-functional decision support}
+    {}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright Advanced}}
+    {Technical Leadership}
+    {Technical mentoring and coaching, architecture and code reviews, engineering standards, knowledge transfer, project leadership, capability development, stakeholder influence, and candidate interviewing}
+    {}{}{}
+
+\hypertarget{education}{
+\section{Education}\label{education}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright 2016 -- \newline 2021}}
+    {Doctor of Philosophy}{Finance and Accounting}{Indian Institute of Management, Bangalore}{}{CGPA: 3.64 / 4.00}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2010 -- \newline 2012}}
+    {Master of Engineering}{Electrical Communication Engineering}{Indian Institute of Science, Bangalore}{}{CGPA: 6.4 / 8.0; Project Grade: A}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2006 -- \newline 2010}}
+    {Bachelor of Technology}{Electronics and Communication Engineering}{Bundelkhand Institute of Engineering and Technology, Jhansi (U.P.)}{}{Grade: 73.6\%}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2004 -- \newline 2006}}
+    {Schooling (12th Standard)}{Science}{C.B.S.E.}{}{Grade: 88.2\%}
+
+\hypertarget{awards-and-honours}{
+\section{Awards and Honours}\label{awards-and-honours}}
+
+\nopagebreak
+    \cventry{\parbox[t]{2cm}{\raggedright 2025}}
+    {Drive}
+    {Target Corporation}{}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2022}}
+    {Tech Genius, Transforming the Organization, Victory Fleet}
+    {WNS Global Services}{}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2020}}
+    {Mirae Asset Scholarship (PhD Year 5)}
+    {Indian Institute of Management}{}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2017--2018}}
+    {Director's Merit List (PhD Years 1 and 2)}
+    {Indian Institute of Management}{}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2016}}
+    {96.5th percentile}
+    {Common Aptitude Test (CAT)}{}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2010}}
+    {All India Rank 20 of 105,000}
+    {Graduate Aptitude Test in Engineering (GATE)}{}{}{}
+
+    \cventry{\parbox[t]{2cm}{\raggedright 2006--2007}}
+    {Merit Scholarships}
+    {Intermediate Examination and Engineering}{}{}{}
+
+\end{document}
